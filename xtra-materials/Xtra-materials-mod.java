@@ -1,4 +1,4 @@
-package Xtra-materials;
+package xtra-materials;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
