@@ -1,0 +1,10 @@
+tile.TitaniumOre.name=Titanium Ore
+item.titaniumIngot.name=Titanium Ingot
+item.titaniumPickaxe.name=Titanium Pickaxe
+item.unsmeltedtitanium.name=Unsmelted Titanium
+itemGroup.Xtramatertials=Xtra Materials
+item.titaniumSword.name=Titanium Sword
+entity.Ogre.name=Snow Troll
+tile.TitaniumBlock.name=Titanium Block
+item.lightningRod.name=Lightning Sword
+item.lightningConductor.name=Lightning Conductor
