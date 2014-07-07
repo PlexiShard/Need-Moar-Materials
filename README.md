@@ -1,4 +1,4 @@
-Xtra Materials Modification
+Xtra-Materials Modification
 ===========================
 
 A lightweight Minecraft Forge mod that adds extra materials.
