@@ -19,7 +19,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-@Mod(modid= "var", name = "Var_Username's Xtra materials", version = "0.1 Alpha")
+@Mod(modid= "var", name = "Plexishard's Xtra-Materials Modification", version = "0.1 Alpha")
 
 public class MainRegistry {
 	
