@@ -1,7 +1,7 @@
 Xtra-Materials Modification
 ===========================
 
-A lightweight Minecraft Forge mod that adds extra materials.
+A lightweight Minecraft Forge mod that adds extra materials, including titanium, silver, ebony, and more!
 
 ##Prerequisites
 This Minecraft mod is made for Minecraft Forge, which you can download at the link below.
