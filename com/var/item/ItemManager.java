@@ -29,7 +29,7 @@ public class ItemManager {
     	unsmeltedTitanium = new UnsmeltedTitanium();
     	titaniumPickaxe = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumPickaxe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumPickaxe");
     	titaniumSword = new TitaniumSword(titanium).setUnlocalizedName("titaniumSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumSword");
-        titaniumAxe = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumAxe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:TitaniumAxe"); 
+        titaniumAxe = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumAxe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumAxe"); 
         titaniumShovel = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumShovel").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumShovel");
         titaniumHoe = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumHoe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumHoe");
         lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword");
