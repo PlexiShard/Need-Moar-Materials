@@ -21,7 +21,3 @@ If you are using Forge (without Modloader) go to your Application Data folder, a
 ##License
 
 To see information on licensing, go to the LICENSE.md file.
-
-##Contributing
-
-To see information on contributing to this project, go to the CONTRIBUING.md file.
