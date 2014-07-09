@@ -32,7 +32,7 @@ public class ItemManager {
         titaniumAxe = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumAxe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumAxe"); 
         titaniumShovel = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumShovel").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumShovel");
         titaniumHoe = new TitaniumPickaxe(titanium).setUnlocalizedName("titaniumHoe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:titaniumHoe");
-        lightningSword = new        LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword");
+        lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword");
     	lightningConductor = new LightningConductor();
     }
  
@@ -55,9 +55,9 @@ public class ItemManager {
 	public static Item titaniumPickaxe;
 	public static Item titaniumSword;
 	public static Item lightningSword;
-    public static Item titaniumAxe;
-    public static Item titaniumShovel;
-    public static Item titaniumHoe;
+    	public static Item titaniumAxe;
+    	public static Item titaniumShovel;
+	public static Item titaniumHoe;
 	public static Item lightningConductor;
 	
 	//block calling
