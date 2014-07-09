@@ -8,3 +8,6 @@ entity.Ogre.name=Snow Troll
 tile.TitaniumBlock.name=Titanium Block
 item.lightningRod.name=Lightning Sword
 item.lightningConductor.name=Lightning Conductor
+item.titaniumShovel.name=Titanium Shovel
+item.titaniumHoe.name=Titanium Hoe
+item.titaniumAxe.name=Titanium Axe
