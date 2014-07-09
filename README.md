@@ -1,4 +1,4 @@
-Var_username's Xtra-Materials Modification
+Var-Username's Xtra-Materials Modification
 ===========================
 
 A lightweight Minecraft Forge mod that adds extra materials, including titanium, silver, ebony, platinum, and more!
@@ -22,3 +22,4 @@ First, make sure you have all prerequisites downloaded and installed.
 If you are using Forge (without Modloader) go to your Application Data folder, and go to the Forge version of minecraft  under .minecraft (or where ever you stored it) and place the .zip in the "mods" folder.
   
 ##License
+Please refer to LICENSE.md
