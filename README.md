@@ -1,4 +1,4 @@
-Var-Username's Xtra-Materials Modification
+PlexiShard's Xtra-Materials Modification
 ===========================
 
 A lightweight Minecraft Forge mod that adds extra materials, including titanium, silver, ebony, platinum, and more!
