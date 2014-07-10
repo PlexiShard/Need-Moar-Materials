@@ -1,4 +1,4 @@
-PlexiShard's Xtra-Materials Modification
+Need Moar Materials
 ===========================
 
 A lightweight Minecraft Forge mod that adds extra materials, including titanium, silver, ebony, platinum, and more!
