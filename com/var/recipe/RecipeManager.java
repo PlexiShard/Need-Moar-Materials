@@ -20,6 +20,7 @@ public class RecipeManager {
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lightningConductor, 1), " x ", " x ", " x ", 'x', ItemManager.titaniumIngot);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lightningSword, 1), "rlr", "rsr", "rrr", 'r', Items.redstone, 'l', ItemManager.lightningConductor, 's', ItemManager.titaniumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumAxe, 1), "xx ", "xy ", " y ", 'x', ItemManager.titaniumIngot, 'y', Item.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumHoe, 1), "xx ", " y ", " y ", 'x', ItemManager.titaniumIngot, 'y', Item.stick);
 			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.titaniumIngot, 9), ItemManager.titaniumBlock);
 		}
 		
