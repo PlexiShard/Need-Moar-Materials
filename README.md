@@ -1,7 +1,7 @@
 Need Moar Materials
 ===========================
 
-A lightweight Minecraft Forge mod that adds extra materials, including titanium, silver, ebony, platinum, and more!
+A not-so-lightweight Minecraft Forge mod that adds extra materials, including titanium, silver, ebony, platinum, and more!
 
 ##Credits
 All the members at plexishard who helped with bug fixes and some items.
