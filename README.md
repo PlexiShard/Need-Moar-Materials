@@ -23,3 +23,6 @@ If you are using Forge (without Modloader) go to your Application Data folder, a
   
 ##License
 Please refer to LICENSE.md
+
+##Questions, Comments, Conserns?
+Email us at PlexiShardStudios@gmail.com!
