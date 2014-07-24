@@ -24,8 +24,8 @@ If you are using Forge (without Modloader) go to your Application Data folder, a
 ##License
 Please refer to LICENSE.md
 
-##Questions, Comments, Conserns?
-Email us at PlexiShardStudios@gmail.com!
+##Questions, Comments, Concerns?
+Email us at plexishardstudios@gmail.com!
 
 ##Donations
 Please donate, it helps us know that people want us to continue making modifications, donate to our BitCoin wallet:
