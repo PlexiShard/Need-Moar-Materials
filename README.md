@@ -26,3 +26,8 @@ Please refer to LICENSE.md
 
 ##Questions, Comments, Conserns?
 Email us at PlexiShardStudios@gmail.com!
+
+##Donations
+Please donate, it helps us know that people want us to continue making modifications, donate to our BitCoin wallet:
+1MAN6UCSLep4LZnZkRug5pshdjYZgEQuKS
+It really does help!
