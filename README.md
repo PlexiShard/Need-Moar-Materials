@@ -8,9 +8,9 @@ All the members at PlexiShard who helped with bug fixes and some items.
 Seriously, these guys helped with most everything.
 
 ##Prerequisites
-This Minecraft mod is made for Minecraft Forge, which you can download at the link below.
+This Minecraft mod is made for Minecraft Forge v.10.12.2.1147, which you can download at the link below.
 http://files.minecraftforge.net/
-You have to get the 1.7.2 download of the Forge.
+You have to get the latest 1.7.2 download of the Forge.
  
 Also, go to the "Releases" in GitHub, and download the version of the mod you want.
 https://github.com/PlexiShard/Xtra-materials-mod/releases
