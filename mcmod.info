@@ -1,0 +1,14 @@
+[
+{
+  "modid": "NMM",
+  "name": "Need Moar Materials",
+  "description": "A not so lightweight mod that adds more materials",
+  "version": "0.1 A",
+  "mcversion": "1.7.2",
+  "authorList": ["bmt01"],
+  "credits": "Everyone at Plexishard",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
