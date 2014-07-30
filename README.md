@@ -20,7 +20,7 @@ https://github.com/PlexiShard/Xtra-materials-mod/releases
  
 First, make sure you have all prerequisites downloaded and installed.
  
-If you are using Forge (without Modloader) go to your Application Data folder, and go to the Forge version of minecraft  under .minecraft (or where ever you stored it) and place the .zip in the "mods" folder.
+If you are using Forge (without Modloader) go to your Application Data folder, and go to the Forge version of minecraft  under .minecraft (or where ever you stored it) and place the .jar in the "mods" folder.
   
 ##License
 Please refer to LICENSE.md
