@@ -23,6 +23,10 @@ public class RecipeManager {
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumHoe, 1), "xx ", " y ", " y ", 'x', ItemManager.titaniumIngot, 'y', Items.stick);
 			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.titaniumIngot, 9), ItemManager.titaniumBlock);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumShovel, 1), " x ", " s ", " s ", 'x', ItemManager.titaniumIngot, 's', Items.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumHelmet, 1), "ttt", "t t", 't', ItemManager.titaniumIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumChestplate, 1), "t t", "ttt", "ttt", 't', ItemManager.titaniumIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumLeggings, 1), "ttt", "t t", "t t", 't', ItemManager.titaniumIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.titaniumBoots, 1), "t t", "t t", 't', ItemManager.titaniumIngot);
 		}
 		
 		public static void addSmeltingRecipes() {

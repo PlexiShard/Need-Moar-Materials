@@ -20,11 +20,11 @@ public class Ogre extends EntityMob{
 	
 	@Override
 	public void dropFewItems(boolean recentlyHit, int lootLevel) {
-		int quantity = this.rand.nextInt(5) + 3;
+		int quantity = this.rand.nextInt(3) + 1;
 		
 		for (int i = 0; i < quantity; i++) {
 			Item drop = Item.getItemFromBlock(ItemManager.titaniumOre);
-			this.dropItem(drop, 3);
+			this.dropItem(drop, 1);
 		}
 	}
 	
