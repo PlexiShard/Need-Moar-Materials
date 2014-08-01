@@ -18,7 +18,10 @@ https://github.com/PlexiShard/Xtra-materials-mod/releases
 First, make sure you have all prerequisites downloaded and installed.
  
 If you are using Forge (without Modloader) go to your Application Data folder, and go to the Forge version of minecraft  under .minecraft (or where ever you stored it) and place the .jar in the "mods" folder.
-  
+
+##Errors and Help
+If you need help, or want to report an error, please post an issue in the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub!
+
 ##License
 Please refer to LICENSE.md
 
@@ -27,6 +30,7 @@ Email us at plexishardstudios@gmail.com!
 
 ##Donations
 Please donate, it helps us know that people want us to continue making modifications, donate to our BitCoin wallet:
+
 1MAN6UCSLep4LZnZkRug5pshdjYZgEQuKS
 
 It really does help!
