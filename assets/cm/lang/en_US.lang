@@ -1,16 +1,23 @@
-tile.TitaniumOre.name=Titanium Ore
-item.titaniumIngot.name=Titanium Ingot
-item.titaniumPickaxe.name=Titanium Pickaxe
-item.unsmeltedtitanium.name=Unsmelted Titanium
+//Item Group
 itemGroup.Xtramatertials=NMM
-item.titaniumSword.name=Titanium Sword
-entity.Ogre.name=Snow Troll
+
+//Tiles
+tile.TitaniumOre.name=Titanium Ore
 tile.TitaniumBlock.name=Titanium Block
-item.lightningRod.name=Lightning Sword
-item.lightningConductor.name=Lightning Conductor
+
+//Entities
+entity.Ogre.name=Snow Troll
+
+//Items
+item.titaniumPickaxe.name=Titanium Pickaxe
+item.titaniumSword.name=Titanium Sword
 item.titaniumShovel.name=Titanium Shovel
 item.titaniumHoe.name=Titanium Hoe
 item.titaniumAxe.name=Titanium Axe
+item.titaniumIngot.name=Titanium Ingot
+item.unsmeltedtitanium.name=Unsmelted Titanium
+item.lightningRod.name=Lightning Sword
+item.lightningConductor.name=Lightning Conductor
 item.titaniumHelmet.name=Titanium Helmet
 item.titaniumChestplate.name=Titanium Chestplate
 item.titaniumLeggings.name=Titanium Leggings
