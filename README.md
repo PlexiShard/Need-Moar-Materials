@@ -25,6 +25,9 @@ If you need help, or want to report an error, please post an issue in the "[Issu
 ##License
 Please refer to LICENSE.md
 
+##Want to Help Out?
+Go into the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub, and see what you can help out on! Email us at PlexiShardStudios@gmail.com if you want to talk!
+
 ##Questions, Comments, Concerns?
 Email us at PlexiShardStudios@gmail.com!
 
