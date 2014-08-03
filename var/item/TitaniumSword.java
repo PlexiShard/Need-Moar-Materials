@@ -9,6 +9,4 @@ public class TitaniumSword extends ItemSword{
 		// TODO Auto-generated constructor stub
 	}
 
-	
-	
 }
