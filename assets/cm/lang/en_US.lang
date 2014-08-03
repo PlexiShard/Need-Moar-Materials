@@ -1,25 +1,42 @@
-//Item Group
-itemGroup.Xtramatertials=NMM
-
-//Tiles
 tile.TitaniumOre.name=Titanium Ore
 tile.TitaniumBlock.name=Titanium Block
 
-//Entities
-entity.Ogre.name=Snow Troll
-
-//Items
+item.titaniumIngot.name=Titanium Ingot
+item.lightningSword.name=Lightning Sword
 item.titaniumPickaxe.name=Titanium Pickaxe
-item.titaniumSword.name=Titanium Sword
 item.titaniumShovel.name=Titanium Shovel
+item.titaniumSword.name=Titanium Sword
 item.titaniumHoe.name=Titanium Hoe
 item.titaniumAxe.name=Titanium Axe
-item.titaniumIngot.name=Titanium Ingot
-item.unsmeltedtitanium.name=Unsmelted Titanium
-item.lightningRod.name=Lightning Sword
-item.lightningConductor.name=Lightning Conductor
 item.titaniumHelmet.name=Titanium Helmet
 item.titaniumChestplate.name=Titanium Chestplate
 item.titaniumLeggings.name=Titanium Leggings
 item.titaniumBoots.name=Titanium Boots
+item.unsmeltedtitanium.name=Unsmelted Titanium
+item.lightningConductor.name=Lightning Conductor
+
+
 item.platinumIngot.name=Platinum Ingot
+item.platinumHoe.name=Platinum Hoe
+item.platinumPickaxe.name=Platinum Pickaxe
+item.platinumShovel.name=Platinum Shovel
+item.platinumSword.name=Platinum Sword
+item.platinumAxe.name=Platinum Axe
+item.platinumHelmet.name=Platinum Helmet
+item.platinumChestplate.name=Platinum Chestplate
+item.platinumLeggings.name=Platinum Leggings
+item.platinumBoots.name=Platinum Boots
+
+tile.PlatinumOre.name=Platinum Ore
+tile.PlatinumBlock.name=Platinum Block
+
+
+item.lightningRod.name=Lightning Sword
+item.skySword.name=Sky Sword
+item.poisonSword.name=Poison Sword
+
+
+itemGroup.Xtramatertials=NMM
+
+
+entity.Ogre.name=Snow Troll
