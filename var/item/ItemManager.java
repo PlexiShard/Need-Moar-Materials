@@ -52,9 +52,9 @@ public class ItemManager {
     	platinumLeggings = new PlatinumLeggings(platinumArmor, MainRegistry.proxy.addArmor("platinumLeggings"), 2).setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:platinumLeggings").setUnlocalizedName("platinumLeggings");
     	platinumBoots = new PlatinumBoots(platinumArmor, MainRegistry.proxy.addArmor("platinumBoots"), 3).setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:platinumBoots").setUnlocalizedName("platinumBoots");
     	//Elemental Swords
-    	lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword");
-    	poisonSword = new PoisonSword(titanium).setUnlocalizedName("poisonSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:poisonSword");
-    	skySword = new SkySword(titanium).setUnlocalizedName("skySword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:skySword");
+    	lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword").setMaxDamage(100);
+    	poisonSword = new PoisonSword(titanium).setUnlocalizedName("poisonSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:poisonSword").setMaxDamage(100);
+    	skySword = new SkySword(titanium).setUnlocalizedName("skySword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:skySword").setMaxDamage(100);
     	//Misc. Items
     	lightningConductor = new LightningConductor();
     }

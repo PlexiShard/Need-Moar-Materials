@@ -15,7 +15,7 @@ public class PoisonSword extends ItemSword {
 
 	@Override
 	public boolean hitEntity(ItemStack sword, EntityLivingBase target, EntityLivingBase owner) {
-		Potion.wither.affectEntity(target, target, 2, 1000000F);
+		Potion.poison.affectEntity(target, target, 2, 1000000F);
 		return true;
 	}
 	
