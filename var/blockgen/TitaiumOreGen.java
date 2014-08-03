@@ -25,6 +25,7 @@ public class TitaiumOreGen implements IWorldGenerator {
 	
 	public void generateSurface(World world, Random random, int x, int z) {
 		this.addOreSpawn(ItemManager.titaniumOre, world, random, x, z, 16, 16, 5, 10, 1, 32);
+		this.addOreSpawn(ItemManager.platinumOre, world, random, x, z, 16, 16, 3, 3, 1, 16);
 	}
 	
 	public void generateNether(World world, Random random, int x, int z) {

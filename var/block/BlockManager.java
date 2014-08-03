@@ -14,12 +14,20 @@ public class BlockManager {
 	
 	
 	public static void initializeBlock() {
+		//titanium
 		ItemManager.titaniumOre = new TitaniumOre(Material.rock);
 		ItemManager.titaniumBlock = new TitaniumBlock(Material.rock);
+		//platinum
+		ItemManager.platinumOre = new PlatinumOre(Material.rock);
+		ItemManager.platinumBlock = new PlatinumBlock(Material.rock);
 	}
 	
 	public static void registerBlock() {
+		//titanium
 		GameRegistry.registerBlock(ItemManager.titaniumOre, ItemManager.titaniumOre.getUnlocalizedName());
 		GameRegistry.registerBlock(ItemManager.titaniumBlock, ItemManager.titaniumBlock.getUnlocalizedName());
+		//platinum
+		GameRegistry.registerBlock(ItemManager.platinumOre, ItemManager.platinumOre.getUnlocalizedName());
+		GameRegistry.registerBlock(ItemManager.platinumBlock, ItemManager.platinumBlock.getUnlocalizedName());
 	}
 }
