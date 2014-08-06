@@ -7,7 +7,7 @@ A not-so-lightweight Minecraft Forge mod that adds extra materials, including ti
 This Minecraft mod is made for Minecraft Forge v.10.12.2.1147, which you can download at [this link](http://files.minecraftforge.net/).
 You have to get the latest 1.7.2 download of the Forge.
 
-**It is very important that you get the 1.7.2 version of Forge, or it will not work!!**
+**It is very important that you get the 1.7.2 v.10.12.2.1147 version of Forge, or it will most likley not work!! This version is the only version we have tested so far, but more will be added in the future!**
  
 Also, go to the "Releases" in GitHub, and download the version of the mod you want.
 https://github.com/PlexiShard/Xtra-materials-mod/releases
