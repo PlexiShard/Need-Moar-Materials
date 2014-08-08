@@ -20,6 +20,9 @@ public class BlockManager {
 		//platinum
 		ItemManager.platinumOre = new PlatinumOre(Material.rock);
 		ItemManager.platinumBlock = new PlatinumBlock(Material.rock);
+		//steel
+		ItemManager.steelOre = new SteelOre(Material.rock);
+		ItemManager.steelBlock = new SteelBlock(Material.rock);
 	}
 	
 	public static void registerBlock() {
@@ -29,5 +32,8 @@ public class BlockManager {
 		//platinum
 		GameRegistry.registerBlock(ItemManager.platinumOre, ItemManager.platinumOre.getUnlocalizedName());
 		GameRegistry.registerBlock(ItemManager.platinumBlock, ItemManager.platinumBlock.getUnlocalizedName());
+		//steel
+		GameRegistry.registerBlock(ItemManager.steelBlock, ItemManager.steelBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(ItemManager.steelOre, ItemManager.steelOre.getUnlocalizedName());
 	}
 }

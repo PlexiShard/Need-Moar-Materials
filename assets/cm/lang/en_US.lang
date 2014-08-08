@@ -13,8 +13,10 @@ item.titaniumChestplate.name=Titanium Chestplate
 item.titaniumLeggings.name=Titanium Leggings
 item.titaniumBoots.name=Titanium Boots
 item.unsmeltedtitanium.name=Unsmelted Titanium
-item.lightningConductor.name=Lightning Conductor
 
+
+tile.PlatinumOre.name=Platinum Ore
+tile.PlatinumBlock.name=Platinum Block
 
 item.platinumIngot.name=Platinum Ingot
 item.platinumHoe.name=Platinum Hoe
@@ -27,13 +29,30 @@ item.platinumChestplate.name=Platinum Chestplate
 item.platinumLeggings.name=Platinum Leggings
 item.platinumBoots.name=Platinum Boots
 
-tile.PlatinumOre.name=Platinum Ore
-tile.PlatinumBlock.name=Platinum Block
 
+tile.SteelOre.name=Steel Ore
+tile.SteelBlock.name=Steel Block
+
+item.steelIngot.name=Steel Ingot
+item.steelAxe.name=Steel Axe
+item.steelHoe.name=Steel Hoe
+item.steelShovel.name=Steel Shovel
+item.steelSword.name=Steel Sword
+item.steelPickaxe.name=Steel Pickaxe
+item.steelHelmet.name=Steel Helmet
+item.steelChestplate.name=Steel Chestplate
+item.steelLeggings.name=Steel Leggings
+item.steelBoots.name=Steel Boots
 
 item.lightningRod.name=Lightning Sword
 item.skySword.name=Sky Sword
 item.poisonSword.name=Poison Sword
+item.fireSword.name=Fire Sword
+item.darknessSword.name=Darkness Sword
+
+
+item.lightningConductor.name=Lightning Conductor
+item.darknessDust.name=Darkness Dust
 
 
 itemGroup.Xtramatertials=NMM

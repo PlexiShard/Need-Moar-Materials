@@ -41,19 +41,35 @@ public class RecipeManager {
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.platinumLeggings, 1), "ppp", "p p", "p p", 'p', ItemManager.platinumIngot);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.platinumBoots, 1), "p p", "p p", 'p', ItemManager.platinumIngot);
 			
+			//steel
+			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.steelIngot, 9), ItemManager.steelBlock);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelBlock, 1), "ppp", "ppp", "ppp", 'p', ItemManager.steelIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelAxe, 1), "pp", "ps", " s", 'p', ItemManager.steelIngot, 's', Items.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelHoe, 1), "pp", " s", " s", 'p', ItemManager.steelIngot, 's', Items.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelPickaxe, 1), "ppp", " s ", " s ", 'p', ItemManager.steelIngot, 's', Items.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelShovel, 1), "p", "s", "s", 'p', ItemManager.steelShovel, 's', Items.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelSword, 1), "p", "p", "s", 'p', ItemManager.steelIngot, 's', Items.stick);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelHelmet, 1), "ppp", "p p", 'p', ItemManager.steelIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelChestplate, 1), "p p", "ppp", "ppp", 'p', ItemManager.steelIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelLeggings, 1), "ppp", "p p", "p p", 'p', ItemManager.steelIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelBoots, 1), "p p", "p p", 'p', ItemManager.steelIngot);
+			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.steelIngot, 1), ItemManager.titaniumIngot, Items.iron_ingot);
+			
 			//Elemental Swords
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lightningSword, 1), "rlr", "rsr", "rrr", 'r', Items.redstone, 'l', ItemManager.lightningConductor, 's', ItemManager.titaniumSword);
-			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.poisonSword, 1), " p ", "psp", " p ", 'p', Items.poisonous_potato, 's', ItemManager.titaniumSword);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.poisonSword, 1), " p ", "psp", " d ", 'p', Items.poisonous_potato, 's', ItemManager.titaniumSword, 'd', ItemManager.platinumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.skySword, 1), " p ", "fsf", " p ", 'p', Blocks.piston, 'f', Items.feather, 's', ItemManager.titaniumSword);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.darknessSword, 1), "ded", " s ", "d d", 'd', ItemManager.darknessDust, 's', ItemManager.titaniumSword, 'e', ItemManager.steelSword);
 			
 			//Misc. Items
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lightningConductor, 1), "x", "x", "x", 'x', ItemManager.titaniumIngot);
-
+			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.darknessDust, 1), Items.glowstone_dust, Items.redstone, Items.coal, Items.coal);
 		}
 		
 		public static void addSmeltingRecipes() {
 			GameRegistry.addSmelting(ItemManager.unsmeltedTitanium, new ItemStack(ItemManager.titaniumIngot, 1), 1F);
 			GameRegistry.addSmelting(ItemManager.platinumOre, new ItemStack(ItemManager.platinumIngot, 1),  1F);
+			GameRegistry.addSmelting(ItemManager.steelOre, new ItemStack(ItemManager.steelIngot, 1), 1F);
 	}
 
 }

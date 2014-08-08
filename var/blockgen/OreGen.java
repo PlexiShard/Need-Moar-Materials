@@ -10,7 +10,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import cpw.mods.fml.common.IWorldGenerator;
 
-public class TitaiumOreGen implements IWorldGenerator {
+public class OreGen implements IWorldGenerator {
 	@Override
 	public void generate(Random random, int chunkX, int chunkZ, World world,
 	IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
@@ -26,6 +26,7 @@ public class TitaiumOreGen implements IWorldGenerator {
 	public void generateSurface(World world, Random random, int x, int z) {
 		this.addOreSpawn(ItemManager.titaniumOre, world, random, x, z, 16, 16, 5, 10, 1, 32);
 		this.addOreSpawn(ItemManager.platinumOre, world, random, x, z, 16, 16, 3, 3, 1, 16);
+		this.addOreSpawn(ItemManager.steelOre, world, random, x, z, 16, 16, 6, 6, 1, 48);
 	}
 	
 	public void generateNether(World world, Random random, int x, int z) {

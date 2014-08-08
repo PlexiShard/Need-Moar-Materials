@@ -20,14 +20,73 @@ public class ItemManager {
  
 	//materials
 	//titanium
-	public static ToolMaterial titanium = EnumHelper.addToolMaterial("Titanium", 3, 1000, 8.0F, 6.0F, 14);
+	public static ToolMaterial titanium = EnumHelper.addToolMaterial("Titanium", 3, 500, 8.0F, 6.0F, 14);
 	public static ArmorMaterial titaniumArmor = EnumHelper.addArmorMaterial("Titanium", 15, new int[]{4, 12, 6, 4}, 12);
 	
 	//platinum
 	public static ToolMaterial platinum = EnumHelper.addToolMaterial("Platinum", 3, 5000, 6.0F, 2.0F, 25);
 	public static ArmorMaterial platinumArmor = EnumHelper.addArmorMaterial("Platinum", 50, new int[]{4, 9, 5, 3}, 9);
+	//steel
+	public static ToolMaterial steel = EnumHelper.addToolMaterial("Steel", 3, 2500, 6.0F, 4.0F, 14);
+	public static ArmorMaterial steelArmor = EnumHelper.addArmorMaterial("Steel", 25, new int[]{4, 8, 6, 4}, 9);
 	
-    public static void initializeItem() {
+	//item calling
+    //titanium
+	public static Item titaniumIngot;
+	public static Item unsmeltedTitanium;
+	public static Item titaniumPickaxe;
+	public static Item titaniumSword;
+    public static Item titaniumAxe;
+    public static Item titaniumShovel;
+	public static Item titaniumHoe;
+	public static Item titaniumHelmet;
+	public static Item titaniumChestplate;
+	public static Item titaniumLeggings;
+	public static Item titaniumBoots;
+	//platinum
+	public static Item platinumIngot;
+	public static Item platinumPickaxe;
+	public static Item platinumSword;
+	public static Item platinumAxe;
+	public static Item platinumShovel;
+	public static Item platinumHoe;
+	public static Item platinumHelmet;
+	public static Item platinumChestplate;
+	public static Item platinumLeggings;
+	public static Item platinumBoots;
+	//steel
+	public static Item steelAxe;
+	public static Item steelHoe;
+	public static Item steelIngot;
+	public static Item steelPickaxe;
+	public static Item steelShovel;
+	public static Item steelSword;
+	public static Item steelHelmet;
+	public static Item steelChestplate;
+	public static Item steelLeggings;
+	public static Item steelBoots;
+	//Elemental Swords
+	public static Item lightningSword;
+	public static Item poisonSword;
+	public static Item skySword;
+	public static Item fireSword;
+	public static Item darknessSword;
+	//Misc. Items
+	public static Item lightningConductor;
+	public static Item darknessDust;
+	
+	//block calling
+	//titanium
+	public static Block titaniumOre;
+	public static Block titaniumBlock;
+	//platinum
+	public static Block platinumOre;
+	public static Block platinumBlock;
+	//steel
+	public static Block steelOre;
+	public static Block steelBlock;
+    
+	public static void initializeItem() {
     	//titanium
     	titaniumIngot = new TitaniumIngot();
     	unsmeltedTitanium = new UnsmeltedTitanium();
@@ -51,12 +110,26 @@ public class ItemManager {
     	platinumChestplate = new PlatinumChestPlate(platinumArmor, MainRegistry.proxy.addArmor("platinumChestplate"), 1).setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:platinumChestplate").setUnlocalizedName("platinumChestplate");
     	platinumLeggings = new PlatinumLeggings(platinumArmor, MainRegistry.proxy.addArmor("platinumLeggings"), 2).setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:platinumLeggings").setUnlocalizedName("platinumLeggings");
     	platinumBoots = new PlatinumBoots(platinumArmor, MainRegistry.proxy.addArmor("platinumBoots"), 3).setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:platinumBoots").setUnlocalizedName("platinumBoots");
+    	//steel
+    	steelAxe = new SteelAxe(steel).setUnlocalizedName("steelAxe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelAxe");
+    	steelHoe = new SteelHoe(steel).setUnlocalizedName("steelHoe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelHoe");
+    	steelPickaxe = new SteelPickaxe(steel).setUnlocalizedName("steelPickaxe").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelPickaxe");
+    	steelIngot = new SteelIngot().setUnlocalizedName("steelIngot").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelIngot");
+    	steelShovel = new SteelShovel(steel).setUnlocalizedName("steelShovel").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelShovel");
+    	steelSword = new SteelSword(steel).setUnlocalizedName("steelSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelSword");
+    	steelHelmet = new SteelHelmet(steelArmor, MainRegistry.proxy.addArmor("SteelHelmet"), 0).setUnlocalizedName("steelHelmet").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelHelmet");
+    	steelChestplate = new SteelChestplate(steelArmor, MainRegistry.proxy.addArmor("SteelChestplate"), 1).setUnlocalizedName("steelChestplate").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelChestplate");
+    	steelLeggings = new SteelLeggings(steelArmor, MainRegistry.proxy.addArmor("SteelLeggings"), 2).setUnlocalizedName("steelLeggings").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelLeggings");
+    	steelBoots = new SteelBoots(steelArmor, MainRegistry.proxy.addArmor("SteelBoots"), 3).setUnlocalizedName("steelBoots").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelBoots");
     	//Elemental Swords
     	lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword").setMaxDamage(100);
     	poisonSword = new PoisonSword(titanium).setUnlocalizedName("poisonSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:poisonSword").setMaxDamage(100);
     	skySword = new SkySword(titanium).setUnlocalizedName("skySword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:skySword").setMaxDamage(100);
+    	fireSword = new FireSword(titanium).setUnlocalizedName("fireSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:fireSword").setMaxDamage(100);
+    	darknessSword = new DarknessSword(titanium).setUnlocalizedName("darknessSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:darknessSword").setMaxDamage(100);
     	//Misc. Items
     	lightningConductor = new LightningConductor();
+    	darknessDust = new DarknessDust().setUnlocalizedName("darknessDust").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:darknessDust");
     }
  
     public static void registerItem() {
@@ -83,50 +156,27 @@ public class ItemManager {
     	GameRegistry.registerItem(platinumChestplate, platinumChestplate.getUnlocalizedName());
     	GameRegistry.registerItem(platinumLeggings, platinumLeggings.getUnlocalizedName());
     	GameRegistry.registerItem(platinumBoots, platinumBoots.getUnlocalizedName());
+    	//steel
+    	GameRegistry.registerItem(steelIngot, steelIngot.getUnlocalizedName());
+    	GameRegistry.registerItem(steelAxe, steelAxe.getUnlocalizedName());
+    	GameRegistry.registerItem(steelHoe, steelHoe.getUnlocalizedName());
+    	GameRegistry.registerItem(steelPickaxe, steelPickaxe.getUnlocalizedName());
+    	GameRegistry.registerItem(steelShovel, steelShovel.getUnlocalizedName());
+    	GameRegistry.registerItem(steelSword, steelSword.getUnlocalizedName());
+    	GameRegistry.registerItem(steelHelmet, steelHelmet.getUnlocalizedName());
+    	GameRegistry.registerItem(steelChestplate, steelChestplate.getUnlocalizedName());
+    	GameRegistry.registerItem(steelLeggings, steelLeggings.getUnlocalizedName());
+    	GameRegistry.registerItem(steelBoots, steelBoots.getUnlocalizedName());
     	//Elemental Swords
     	GameRegistry.registerItem(lightningSword, lightningSword.getUnlocalizedName());
     	GameRegistry.registerItem(poisonSword, poisonSword.getUnlocalizedName());
     	GameRegistry.registerItem(skySword, skySword.getUnlocalizedName());
+    	GameRegistry.registerItem(fireSword, fireSword.getUnlocalizedName());
+    	GameRegistry.registerItem(darknessSword, darknessSword.getUnlocalizedName());
     	//Misc. Items
     	GameRegistry.registerItem(lightningConductor, lightningConductor.getUnlocalizedName());
+    	GameRegistry.registerItem(darknessDust, darknessDust.getUnlocalizedName());
     	
     }
-    //item calling
-    //titanium
-	public static Item titaniumIngot;
-	public static Item unsmeltedTitanium;
-	public static Item titaniumPickaxe;
-	public static Item titaniumSword;
-    public static Item titaniumAxe;
-    public static Item titaniumShovel;
-	public static Item titaniumHoe;
-	public static Item titaniumHelmet;
-	public static Item titaniumChestplate;
-	public static Item titaniumLeggings;
-	public static Item titaniumBoots;
-	//platinum
-	public static Item platinumIngot;
-	public static Item platinumPickaxe;
-	public static Item platinumSword;
-	public static Item platinumAxe;
-	public static Item platinumShovel;
-	public static Item platinumHoe;
-	public static Item platinumHelmet;
-	public static Item platinumChestplate;
-	public static Item platinumLeggings;
-	public static Item platinumBoots;
-	//Elemental Swords
-	public static Item lightningSword;
-	public static Item poisonSword;
-	public static Item skySword;
-	//Misc. Items
-	public static Item lightningConductor;
-	
-	//block calling
-	//titanium
-	public static Block titaniumOre;
-	public static Block titaniumBlock;
-	//platinum
-	public static Block platinumOre;
-	public static Block platinumBlock;
+    
 }
