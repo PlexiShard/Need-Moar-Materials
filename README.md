@@ -17,6 +17,9 @@ First, make sure you have all prerequisites downloaded and installed.
  
 If you are using Forge (without Modloader) go to your Application Data folder, and go to the Forge version of minecraft  under .minecraft (or where ever you stored it) and place the .jar in the "mods" folder.
 
+##Extension Packs
+Soon, we will have an extension pack called BlocksonBlocks, if you would like more information, email us at PlexiShardStudios@gmail.com!
+
 ##Errors and Help
 If you need help, or want to report an error, please post an issue in the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub!
 
