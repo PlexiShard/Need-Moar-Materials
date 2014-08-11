@@ -7,7 +7,7 @@ A not-so-lightweight Minecraft Forge modification that adds extra materials, inc
 This Minecraft mod is made for Minecraft Forge, which you can download at [this link](http://files.minecraftforge.net/).
 You have to get the 1.7.2 download of the Forge.
 
-**It is very important that you get the 1.7.2 version of Forge, or it will most likley not work!! This version is the only version we have tested so far, but more will be added in the future!**
+**It is very important that you get the 1.7.2 version of Forge! This version is the only version we have tested so far, but once 1.8 comes out, we will be immediatly updating to that version.**
  
 Also, go to the "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and download the version of the mod you want.
  
