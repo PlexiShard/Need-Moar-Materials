@@ -19,18 +19,22 @@ public class ItemManager {
     }
  
 	//materials
+	
 	//titanium
 	public static ToolMaterial titanium = EnumHelper.addToolMaterial("Titanium", 3, 500, 8.0F, 6.0F, 14);
 	public static ArmorMaterial titaniumArmor = EnumHelper.addArmorMaterial("Titanium", 15, new int[]{4, 12, 6, 4}, 12);
-	
 	//platinum
 	public static ToolMaterial platinum = EnumHelper.addToolMaterial("Platinum", 3, 5000, 6.0F, 2.0F, 25);
 	public static ArmorMaterial platinumArmor = EnumHelper.addArmorMaterial("Platinum", 50, new int[]{4, 9, 5, 3}, 9);
 	//steel
 	public static ToolMaterial steel = EnumHelper.addToolMaterial("Steel", 3, 2500, 6.0F, 4.0F, 14);
 	public static ArmorMaterial steelArmor = EnumHelper.addArmorMaterial("Steel", 25, new int[]{4, 8, 6, 4}, 9);
+	//brass
+	public static ToolMaterial brass = EnumHelper.addToolMaterial("Brass", 2, 300, 7.0F, 8.0F, 14); 
+	public static ArmorMaterial brassArmor = EnumHelper.addArmorMaterial("Brass", 10, new int[]{3, 7, 5, 3}, 10);
 	
 	//item calling
+	
     //titanium
 	public static Item titaniumIngot;
 	public static Item unsmeltedTitanium;
@@ -65,13 +69,17 @@ public class ItemManager {
 	public static Item steelChestplate;
 	public static Item steelLeggings;
 	public static Item steelBoots;
-	//Elemental Swords
+	//brass
+	public static Item unsmeltedBrass;
+	public static Item brassIngot;
+	public static Item brassSword;
+	//elemental swords
 	public static Item lightningSword;
 	public static Item poisonSword;
 	public static Item skySword;
 	public static Item fireSword;
 	public static Item darknessSword;
-	//Misc. Items
+	//misc. items
 	public static Item lightningConductor;
 	public static Item darknessDust;
 	
@@ -121,13 +129,16 @@ public class ItemManager {
     	steelChestplate = new SteelChestplate(steelArmor, MainRegistry.proxy.addArmor("SteelChestplate"), 1).setUnlocalizedName("steelChestplate").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelChestplate");
     	steelLeggings = new SteelLeggings(steelArmor, MainRegistry.proxy.addArmor("SteelLeggings"), 2).setUnlocalizedName("steelLeggings").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelLeggings");
     	steelBoots = new SteelBoots(steelArmor, MainRegistry.proxy.addArmor("SteelBoots"), 3).setUnlocalizedName("steelBoots").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:steelBoots");
-    	//Elemental Swords
+        //brass
+    	brassSword = new BrassSword(brass).setUnlocalizedName("brassSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:brassSword");
+    	brassIngot = new BrassIngot().setUnlocalizedName("brassIngot").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:brassIngot");
+    	//elemental swords
     	lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword").setMaxDamage(100);
     	poisonSword = new PoisonSword(titanium).setUnlocalizedName("poisonSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:poisonSword").setMaxDamage(100);
     	skySword = new SkySword(titanium).setUnlocalizedName("skySword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:skySword").setMaxDamage(100);
     	fireSword = new FireSword(titanium).setUnlocalizedName("fireSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:fireSword").setMaxDamage(100);
     	darknessSword = new DarknessSword(titanium).setUnlocalizedName("darknessSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:darknessSword").setMaxDamage(100);
-    	//Misc. Items
+    	//misc. items
     	lightningConductor = new LightningConductor();
     	darknessDust = new DarknessDust().setUnlocalizedName("darknessDust").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:darknessDust");
     }
@@ -167,13 +178,16 @@ public class ItemManager {
     	GameRegistry.registerItem(steelChestplate, steelChestplate.getUnlocalizedName());
     	GameRegistry.registerItem(steelLeggings, steelLeggings.getUnlocalizedName());
     	GameRegistry.registerItem(steelBoots, steelBoots.getUnlocalizedName());
-    	//Elemental Swords
+    	//brass
+    	GameRegistry.registerItem(brassSword, brassSword.getUnlocalizedName());
+    	GameRegistry.registerItem(brassIngot, brassIngot.getUnlocalizedName());
+    	//elemental swords
     	GameRegistry.registerItem(lightningSword, lightningSword.getUnlocalizedName());
     	GameRegistry.registerItem(poisonSword, poisonSword.getUnlocalizedName());
     	GameRegistry.registerItem(skySword, skySword.getUnlocalizedName());
     	GameRegistry.registerItem(fireSword, fireSword.getUnlocalizedName());
     	GameRegistry.registerItem(darknessSword, darknessSword.getUnlocalizedName());
-    	//Misc. Items
+    	//misc. items
     	GameRegistry.registerItem(lightningConductor, lightningConductor.getUnlocalizedName());
     	GameRegistry.registerItem(darknessDust, darknessDust.getUnlocalizedName());
     	

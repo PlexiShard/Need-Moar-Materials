@@ -44,6 +44,11 @@ item.steelChestplate.name=Steel Chestplate
 item.steelLeggings.name=Steel Leggings
 item.steelBoots.name=Steel Boots
 
+
+item.brassIngot.name=Brass Ingot
+item.brassSword.name=Brass Sword
+
+
 item.lightningRod.name=Lightning Sword
 item.skySword.name=Sky Sword
 item.poisonSword.name=Poison Sword

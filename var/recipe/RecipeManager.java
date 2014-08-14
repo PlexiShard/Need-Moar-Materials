@@ -55,13 +55,17 @@ public class RecipeManager {
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.steelBoots, 1), "p p", "p p", 'p', ItemManager.steelIngot);
 			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.steelIngot, 1), ItemManager.titaniumIngot, Items.iron_ingot);
 			
-			//Elemental Swords
+			//brass
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.brassIngot, 1), "crc", "rsr", "crc", 'c', ItemManager.copperIngot, 'r', Items.redstone, 's', ItemManager.steelIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.brassIngot, 1), "i", "i", "s", 'i', ItemManager.steelIngot, 's', Items.stick);
+			
+			//elemental swords
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lightningSword, 1), "rlr", "rsr", "rrr", 'r', Items.redstone, 'l', ItemManager.lightningConductor, 's', ItemManager.titaniumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.poisonSword, 1), " p ", "psp", " d ", 'p', Items.poisonous_potato, 's', ItemManager.titaniumSword, 'd', ItemManager.platinumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.skySword, 1), " p ", "fsf", " p ", 'p', Blocks.piston, 'f', Items.feather, 's', ItemManager.titaniumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.darknessSword, 1), "ded", " s ", "d d", 'd', ItemManager.darknessDust, 's', ItemManager.titaniumSword, 'e', ItemManager.steelSword);
 			
-			//Misc. Items
+			//misc. items
 			GameRegistry.addShapedRecipe(new ItemStack(ItemManager.lightningConductor, 1), "x", "x", "x", 'x', ItemManager.titaniumIngot);
 			GameRegistry.addShapelessRecipe(new ItemStack(ItemManager.darknessDust, 1), Items.glowstone_dust, Items.redstone, Items.coal, Items.coal);
 		}
