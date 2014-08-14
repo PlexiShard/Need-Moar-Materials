@@ -1,7 +1,7 @@
-Need Moar Materials
+Need Moar Materials Core
 ===========================
 
-A not-so-lightweight Minecraft Forge modification that adds extra materials, including titanium, silver, ebony, platinum, and more! We are trying to add as much as possible into this mod, and we are open to suggestions, if you have one, scroll down and look at "Questions, Comments, Concerns?", and email us!
+A not-so-lightweight Minecraft Forge modification that adds extra materials, including titanium, silver, ebony, brass, platinum, and more! We are trying to add as much as possible into this mod, and we are open to suggestions, if you have one, scroll down and look at "Questions, Comments, Concerns?", and email us!
 
 ##Prerequisites
 This Minecraft mod is made for Minecraft Forge, which you can download at [this link](http://files.minecraftforge.net/).
@@ -18,7 +18,7 @@ First, make sure you have all prerequisites downloaded and installed.
 If you are using Forge (without Modloader) go to your Application Data folder, and go to the Forge version of minecraft  under .minecraft (or where ever you stored it) and place the .jar in the "mods" folder.
 
 ##Extension Packs
-Soon, we will have an extension pack called BlocksonBlocks, if you would like more information, email us at PlexiShardStudios@gmail.com!
+Soon, we will have an extension pack called BlocksonBlocks and Steam City, if you would like more information, email us at PlexiShardStudios@gmail.com!
 
 ##Errors and Help
 If you need help, or want to report an error, please post an issue in the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub!
