@@ -20,6 +20,9 @@ If you are using Forge (without Modloader) go to your Application Data folder, a
 ##Extension Packs
 Soon, we will have an extension pack called BlocksonBlocks and Steam City, if you would like more information, email us at PlexiShardStudios@gmail.com!
 
+##Steam City
+Steam city is an optional extension pack, that also requires NMM core to function because of the blocks used. To install, go to "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and select the Steam City Extension pack *if you use the pre-release it may not work!*
+
 ##Errors and Help
 If you need help, or want to report an error, please post an issue in the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub!
 
