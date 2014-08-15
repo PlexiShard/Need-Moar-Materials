@@ -1,5 +1,5 @@
 Need Moar Materials Core
-===========================
+========================
 
 A not-so-lightweight Minecraft Forge modification that adds extra materials, including titanium, silver, ebony, brass, platinum, and more! We are trying to add as much as possible into this mod, and we are open to suggestions, if you have one, scroll down and look at "Questions, Comments, Concerns?", and email us!
 
@@ -7,7 +7,7 @@ A not-so-lightweight Minecraft Forge modification that adds extra materials, inc
 This Minecraft mod is made for Minecraft Forge, which you can download at [this link](http://files.minecraftforge.net/).
 You have to get the 1.7.2 download of the Forge.
 
-**It is very important that you get the 1.7.2 version of Forge! This version is the only version we have tested so far, but once 1.8 comes out, we will be immediatly updating to that version.**
+**It is very important that you get the 1.7.2 version of Forge! This version is the only version we have tested so far, but once 1.8 comes out, we will be immediatly updating to that version. Please stop emailing us about updating our mod, we are not going to do it yet.**
  
 Also, go to the "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and download the version of the mod you want.
  
@@ -21,7 +21,9 @@ If you are using Forge (without Modloader) go to your Application Data folder, a
 Soon, we will have an extension pack called BlocksonBlocks and Steam City, if you would like more information, email us at PlexiShardStudios@gmail.com!
 
 ##Steam City
-Steam city is an optional extension pack, that also requires NMM core to function because of the blocks used. To install, go to "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and select the Steam City Extension pack *if you use the pre-release it may not work!*
+Steam city is an optional extension pack, that also requires NMM core to function because of the blocks used. To install, go to "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and select the Steam City Extension pack, *if you use the pre-release it may not work!*
+
+The Steam City is a city that is very steam-punk styled, and you fight a boss there. To get there, you must create a Steam City Teleporter block. Remember, once you go there, you can't come back until you have beaten the boss, (sort of like The End). Once you get there, go to all the buildings to collect keys, and once you have all four keys, go to the main room to open up the door.
 
 ##Errors and Help
 If you need help, or want to report an error, please post an issue in the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub!
