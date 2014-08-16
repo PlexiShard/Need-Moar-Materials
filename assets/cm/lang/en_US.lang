@@ -44,6 +44,8 @@ item.steelChestplate.name=Steel Chestplate
 item.steelLeggings.name=Steel Leggings
 item.steelBoots.name=Steel Boots
 
+tile.brassOre.name=Brass Ore
+tile.brassBlock.name=Brass Block
 
 item.brassIngot.name=Brass Ingot
 item.brassSword.name=Brass Sword

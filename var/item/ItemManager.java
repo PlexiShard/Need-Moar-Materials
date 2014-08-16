@@ -32,6 +32,8 @@ public class ItemManager {
 	//brass
 	public static ToolMaterial brass = EnumHelper.addToolMaterial("Brass", 2, 300, 7.0F, 8.0F, 14); 
 	public static ArmorMaterial brassArmor = EnumHelper.addArmorMaterial("Brass", 10, new int[]{3, 7, 5, 3}, 10);
+	//copper
+	public static ToolMaterial copper = EnumHelper.addToolMaterial("Copper", 2, 300, 7.5F, 8.5F, 16); 
 	
 	//item calling
 	
@@ -73,6 +75,10 @@ public class ItemManager {
 	public static Item unsmeltedBrass;
 	public static Item brassIngot;
 	public static Item brassSword;
+	//copper
+	public static Item unsmeltedCopper;
+	public static Item copperIngot;
+	public static Item copperSword;
 	//elemental swords
 	public static Item lightningSword;
 	public static Item poisonSword;
@@ -93,6 +99,9 @@ public class ItemManager {
 	//steel
 	public static Block steelOre;
 	public static Block steelBlock;
+	//copper
+	public static Block copperOre;
+	public static Block copperBlock;
     
 	public static void initializeItem() {
     	//titanium
@@ -132,6 +141,8 @@ public class ItemManager {
         //brass
     	brassSword = new BrassSword(brass).setUnlocalizedName("brassSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:brassSword");
     	brassIngot = new BrassIngot().setUnlocalizedName("brassIngot").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:brassIngot");
+    	//copper
+    	copperIngot = new CopperIngot().setUnlocalizedName("copperIngot").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:copperIngot");
     	//elemental swords
     	lightningSword = new LightningSword(titanium).setUnlocalizedName("lightningRod").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:lightningSword").setMaxDamage(100);
     	poisonSword = new PoisonSword(titanium).setUnlocalizedName("poisonSword").setCreativeTab(CreativeTabsManager.xtramaterialsTab).setTextureName("cm:poisonSword").setMaxDamage(100);

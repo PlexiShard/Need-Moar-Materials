@@ -27,6 +27,7 @@ public class OreGen implements IWorldGenerator {
 		this.addOreSpawn(ItemManager.titaniumOre, world, random, x, z, 16, 16, 5, 10, 1, 32);
 		this.addOreSpawn(ItemManager.platinumOre, world, random, x, z, 16, 16, 3, 3, 1, 16);
 		this.addOreSpawn(ItemManager.steelOre, world, random, x, z, 16, 16, 6, 6, 1, 48);
+		this.addOreSpawn(ItemManager.copperOre, world, random, x, z, 16, 16, 6, 5, 1, 48);
 	}
 	
 	public void generateNether(World world, Random random, int x, int z) {
