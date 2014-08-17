@@ -9,7 +9,7 @@ You have to get the 1.7.2 download of the Forge.
 
 **It is very important that you get the 1.7.2 version of Forge! This version is the only version we have tested so far, but once 1.8 comes out, we will be immediatly updating to that version. Please stop emailing us about updating our mod, we are not going to do it yet.**
  
-Also, go to the "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and download the version of the mod you want.
+Also, go to the "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and download the version of the mod you want. It is highly suggested that you get the most recent version that is not a pre-release, because those will almost always work. It is very rare that one of those builds will not work.
  
 ##Installing
  
