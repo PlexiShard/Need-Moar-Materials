@@ -74,6 +74,8 @@ public class RecipeManager {
 			GameRegistry.addSmelting(ItemManager.unsmeltedTitanium, new ItemStack(ItemManager.titaniumIngot, 1), 1F);
 			GameRegistry.addSmelting(ItemManager.platinumOre, new ItemStack(ItemManager.platinumIngot, 1),  1F);
 			GameRegistry.addSmelting(ItemManager.steelOre, new ItemStack(ItemManager.steelIngot, 1), 1F);
+			GameRegistry.addSmelting(ItemManager.bronzeOre, new ItemStack(ItemManager.bronzeIngot, 1), 1F);
+
 	}
 
 }
