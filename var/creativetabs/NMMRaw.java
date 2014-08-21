@@ -1,22 +1,20 @@
 package var.creativetabs;
 
-import var.item.ItemManager;
-
+import var.item.platinum.PlatinumManager;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
 
-public class XtramaterialsTab extends CreativeTabs {
+public class NMMRaw extends CreativeTabs {
 
-	public XtramaterialsTab(String lable) {
+	public NMMRaw(String lable) {
 		super(lable);
 		// TODO Auto-generated constructor stub
 	}
 
-	//@Override
+	@Override
 	public Item getTabIconItem() {
 		// TODO Auto-generated method stub
-		return ItemManager.titaniumIngot;
+		return PlatinumManager.platinumIngot;
 	}
 
 }

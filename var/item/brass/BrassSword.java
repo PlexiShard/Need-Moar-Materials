@@ -1,4 +1,4 @@
-package var.item;
+package var.item.brass;
 
 import net.minecraft.item.ItemSword;
 

@@ -4,15 +4,15 @@ import var.creativetabs.CreativeTabsManager;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class PlatinumOre extends Block {
+public class BrassBlock extends Block {
 
-	public PlatinumOre(Material p_i45394_1_) {
+	public BrassBlock(Material p_i45394_1_) {
 		super(p_i45394_1_);
-		this.setBlockName("PlatinumOre");
+		this.setBlockName("BrassBlock");
 		this.setCreativeTab(CreativeTabsManager.nmmBlocks);
-		this.setBlockTextureName("platinum:platinumOre");
-		this.setResistance(10.0F);
-		this.setHardness(4.5F);
+		this.setBlockTextureName("brass:brassBlock");
+		this.setResistance(90.0F);
+		this.setHardness(9.0F);
 	}
 
 }

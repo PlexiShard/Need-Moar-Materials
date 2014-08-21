@@ -1,4 +1,4 @@
-package var.item;
+package var.item.copper;
 
 import net.minecraft.item.Item;
 

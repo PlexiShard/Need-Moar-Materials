@@ -8,9 +8,17 @@ public class CreativeTabsManager {
 		initializeTabs();
 	}
 	
-	public static CreativeTabs xtramaterialsTab;
+	public static CreativeTabs nmmRaw;
+	public static CreativeTabs nmmTools;
+	public static CreativeTabs nmmCombat;
+	public static CreativeTabs nmmBlocks;
+	public static CreativeTabs nmmMisc;
 	
 	public static void initializeTabs() {
-		xtramaterialsTab = new XtramaterialsTab("Xtramatertials");
+		nmmRaw = new NMMRaw("NMMRaw");
+		nmmTools = new NMMTools("NMMTools");
+		nmmCombat = new NMMCombat("NMMCombat");
+		nmmBlocks = new NMMBlocks("NMMBlocks");
+		nmmMisc = new NMMMisc("NMMMisc");
 	}
 }

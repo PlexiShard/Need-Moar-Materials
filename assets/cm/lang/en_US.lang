@@ -44,8 +44,14 @@ item.steelChestplate.name=Steel Chestplate
 item.steelLeggings.name=Steel Leggings
 item.steelBoots.name=Steel Boots
 
-tile.brassOre.name=Brass Ore
-tile.brassBlock.name=Brass Block
+
+tile.CopperOre.name=Copper Ore
+tile.CopperBlock.name=Copper Block
+
+item.copperIngot.name=Copper Ingot
+
+
+tile.BrassBlock.name=Brass Block
 
 item.brassIngot.name=Brass Ingot
 item.brassSword.name=Brass Sword
@@ -63,6 +69,11 @@ item.darknessDust.name=Darkness Dust
 
 
 itemGroup.Xtramatertials=NMM
+itemGroup.NMMMisc=NMM Misc
+itemGroup.NMMTools=NMM Tools
+itemGroup.NMMCombat=NMM Combat
+itemGroup.NMMBlocks=NMM Blocks
+itemGroup.NMMRaw=NMM Raw
 
 
 entity.Ogre.name=Snow Troll
