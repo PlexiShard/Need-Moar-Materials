@@ -2,8 +2,8 @@ package var.blockgen;
 
 import java.util.Random;
 
+import var.block.BlockManager;
 import var.item.ItemManager;
-
 import net.minecraft.block.Block;
 import net.minecraft.world.World;
 import net.minecraft.world.chunk.IChunkProvider;
@@ -24,10 +24,10 @@ public class OreGen implements IWorldGenerator {
 		}
 	
 	public void generateSurface(World world, Random random, int x, int z) {
-		this.addOreSpawn(ItemManager.titaniumOre, world, random, x, z, 16, 16, 5, 10, 1, 32);
-		this.addOreSpawn(ItemManager.platinumOre, world, random, x, z, 16, 16, 3, 3, 1, 16);
-		this.addOreSpawn(ItemManager.steelOre, world, random, x, z, 16, 16, 6, 6, 1, 48);
-		this.addOreSpawn(ItemManager.copperOre, world, random, x, z, 16, 16, 6, 5, 1, 48);
+		this.addOreSpawn(BlockManager.titaniumOre, world, random, x, z, 16, 16, 5, 10, 1, 32);
+		this.addOreSpawn(BlockManager.platinumOre, world, random, x, z, 16, 16, 3, 3, 1, 16);
+		this.addOreSpawn(BlockManager.steelOre, world, random, x, z, 16, 16, 6, 6, 1, 48);
+		this.addOreSpawn(BlockManager.copperOre, world, random, x, z, 16, 16, 6, 5, 1, 48);
 	}
 	
 	public void generateNether(World world, Random random, int x, int z) {

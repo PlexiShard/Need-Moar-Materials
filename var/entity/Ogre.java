@@ -2,8 +2,9 @@ package var.entity;
 
 import java.util.Random;
 
+import var.block.BlockManager;
 import var.item.ItemManager;
-
+import var.item.titanium.TitaniumManager;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.monster.EntityMob;
@@ -15,7 +16,7 @@ public class Ogre extends EntityMob{
 
 	public Ogre(World par1World) {
 		super(par1World);
-		this.dropItem(ItemManager.unsmeltedTitanium, 3);
+		this.dropItem(TitaniumManager.unsmeltedTitanium, 3);
 	}
 	
 	@Override
@@ -23,7 +24,7 @@ public class Ogre extends EntityMob{
 		int quantity = this.rand.nextInt(3) + 1;
 		
 		for (int i = 0; i < quantity; i++) {
-			Item drop = Item.getItemFromBlock(ItemManager.titaniumOre);
+			Item drop = Item.getItemFromBlock(BlockManager.titaniumOre);
 			this.dropItem(drop, 1);
 		}
 	}

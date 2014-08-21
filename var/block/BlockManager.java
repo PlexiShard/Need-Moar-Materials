@@ -1,7 +1,7 @@
 package var.block;
 
 import var.item.ItemManager;
-
+import var.item.brass.BrassManager;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import cpw.mods.fml.common.registry.GameRegistry;
@@ -12,34 +12,50 @@ public class BlockManager {
 		registerBlock();
 	}
 	
+	//titanium
+	public static Block titaniumOre;
+	public static Block titaniumBlock;
+	//platinum
+	public static Block platinumOre;
+	public static Block platinumBlock;
+	//steel
+	public static Block steelOre;
+	public static Block steelBlock;
+	//copper
+	public static Block copperOre;
+	public static Block copperBlock;
 	
 	public static void initializeBlock() {
 		//titanium
-		ItemManager.titaniumOre = new TitaniumOre(Material.rock);
-		ItemManager.titaniumBlock = new TitaniumBlock(Material.rock);
+		titaniumOre = new TitaniumOre(Material.rock);
+		titaniumBlock = new TitaniumBlock(Material.rock);
 		//platinum
-		ItemManager.platinumOre = new PlatinumOre(Material.rock);
-		ItemManager.platinumBlock = new PlatinumBlock(Material.rock);
+		platinumOre = new PlatinumOre(Material.rock);
+		platinumBlock = new PlatinumBlock(Material.rock);
 		//steel
-		ItemManager.steelOre = new SteelOre(Material.rock);
-		ItemManager.steelBlock = new SteelBlock(Material.rock);
+		steelOre = new SteelOre(Material.rock);
+		steelBlock = new SteelBlock(Material.rock);
 		//copper
-		ItemManager.copperBlock = new CopperBlock(Material.rock);
-		ItemManager.copperOre = new CopperOre(Material.rock);
+		copperBlock = new CopperBlock(Material.rock);
+		copperOre = new CopperOre(Material.rock);
+		//brass
+		BrassManager.brassBlock = new BrassBlock(Material.rock);
 	}
 	
 	public static void registerBlock() {
 		//titanium
-		GameRegistry.registerBlock(ItemManager.titaniumOre, ItemManager.titaniumOre.getUnlocalizedName());
-		GameRegistry.registerBlock(ItemManager.titaniumBlock, ItemManager.titaniumBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(titaniumOre, titaniumOre.getUnlocalizedName());
+		GameRegistry.registerBlock(titaniumBlock, titaniumBlock.getUnlocalizedName());
 		//platinum
-		GameRegistry.registerBlock(ItemManager.platinumOre, ItemManager.platinumOre.getUnlocalizedName());
-		GameRegistry.registerBlock(ItemManager.platinumBlock, ItemManager.platinumBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(platinumOre, platinumOre.getUnlocalizedName());
+		GameRegistry.registerBlock(platinumBlock, platinumBlock.getUnlocalizedName());
 		//steel
-		GameRegistry.registerBlock(ItemManager.steelBlock, ItemManager.steelBlock.getUnlocalizedName());
-		GameRegistry.registerBlock(ItemManager.steelOre, ItemManager.steelOre.getUnlocalizedName());
+		GameRegistry.registerBlock(steelBlock, steelBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(steelOre, steelOre.getUnlocalizedName());
 		//copper
-		GameRegistry.registerBlock(ItemManager.copperOre, ItemManager.copperOre.getUnlocalizedName());
-		GameRegistry.registerBlock(ItemManager.copperBlock, ItemManager.copperBlock.getUnlocalizedName());
+		GameRegistry.registerBlock(copperOre, copperOre.getUnlocalizedName());
+		GameRegistry.registerBlock(copperBlock, copperBlock.getUnlocalizedName());
+		//brass
+		GameRegistry.registerBlock(BrassManager.brassBlock, BrassManager.brassBlock.getUnlocalizedName());
 	}
 }
