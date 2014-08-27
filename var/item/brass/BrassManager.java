@@ -37,17 +37,25 @@ public class BrassManager {
     	//unsmeltedBrass = new UnsmeltedBrass().setUnlocalizedName("unsmeltedBrass").setCreativeTab(CreativeTabsManager.nmmRaw);
 		brassSword = new BrassSword(brass).setUnlocalizedName("brassSword").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassSword");
     	brassIngot = new BrassIngot().setUnlocalizedName("brassIngot").setCreativeTab(CreativeTabsManager.nmmRaw).setTextureName("brass:brassIngot");
-    	/*brassPickaxe = new BrassPickaxe(brass);
-    	brassShovel = new BrassShovel(brass);
-    	brassHoe = new BrassHoe(brass);
-    	brassAxe = new BrassAxe(brass);
-    	brassHelmet = new BrassHelmet(brassArmor, MainRegistry.proxy.addArmor("BrassHelmet"), 0);
-    	brassChestplate = new BrassChestplate(brassArmor, MainRegistry.proxy.addArmor("BrassChestplate"), 1);
-    	brassLeggings = new BrassLeggings(brassArmor, MainRegistry.proxy.addArmor("brassLeggings"), 2);
-    	brassBoots = new BrassBoots(brassArmor, MainRegistry.proxy.addArmor("brassBoots"), 3);*/
+    	brassPickaxe = new BrassPickaxe(brass).setUnlocalizedName("brassPickaxe").setCreativeTab(CreativeTabsManager.nmmTools).setTextureName("brass:brassPickaxe");
+    	brassShovel = new BrassShovel(brass).setUnlocalizedName("brassShovel").setCreativeTab(CreativeTabsManager.nmmTools).setTextureName("brass:brassShovel");
+    	brassHoe = new BrassHoe(brass).setUnlocalizedName("brassHoe").setCreativeTab(CreativeTabsManager.nmmTools).setTextureName("brass:brassHoe");
+    	brassAxe = new BrassAxe(brass).setUnlocalizedName("brassAxe").setCreativeTab(CreativeTabsManager.nmmTools).setTextureName("brass:brassAxe");
+    	brassHelmet = new BrassHelmet(brassArmor, MainRegistry.proxy.addArmor("BrassHelmet"), 0).setUnlocalizedName("brassHelmet").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassHelmet");
+    	brassChestplate = new BrassChestplate(brassArmor, MainRegistry.proxy.addArmor("BrassChestplate"), 1).setUnlocalizedName("brassChestplate").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassChestplate");
+    	brassLeggings = new BrassLeggings(brassArmor, MainRegistry.proxy.addArmor("brassLeggings"), 2).setUnlocalizedName("brassLeggings").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassLeggings");
+    	brassBoots = new BrassBoots(brassArmor, MainRegistry.proxy.addArmor("brassBoots"), 3).setUnlocalizedName("brassBoots").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassBoots");
 	}
 	public static void registerItem() {
 		GameRegistry.registerItem(brassSword, brassSword.getUnlocalizedName());
     	GameRegistry.registerItem(brassIngot, brassIngot.getUnlocalizedName());
+    	GameRegistry.registerItem(brassPickaxe, brassPickaxe.getUnlocalizedName());
+    	GameRegistry.registerItem(brassAxe, brassAxe.getUnlocalizedName());
+    	GameRegistry.registerItem(brassHoe, brassHoe.getUnlocalizedName());
+    	GameRegistry.registerItem(brassShovel, brassShovel.getUnlocalizedName());
+    	GameRegistry.registerItem(brassHelmet, brassHelmet.getUnlocalizedName());
+    	GameRegistry.registerItem(brassChestplate, brassChestplate.getUnlocalizedName());
+    	GameRegistry.registerItem(brassLeggings, brassLeggings.getUnlocalizedName());
+    	GameRegistry.registerItem(brassBoots, brassBoots.getUnlocalizedName());
 	}
 }

@@ -55,6 +55,14 @@ tile.BrassBlock.name=Brass Block
 
 item.brassIngot.name=Brass Ingot
 item.brassSword.name=Brass Sword
+item.brassPickaxe.name=Brass Pickaxe
+item.brassShovel.name=Brass Shovel
+item.brassHoe.name=Brass Hoe
+item.brassAxe.name=Brass Axe
+item.brassHelmet.name=Brass Helmet
+item.brassChestplate.name=Brass Chestplate
+item.brassLeggings.name=Brass Leggings
+item.brassBoots.name=Brass Boots
 
 
 item.lightningRod.name=Lightning Sword
@@ -68,7 +76,6 @@ item.lightningConductor.name=Lightning Conductor
 item.darknessDust.name=Darkness Dust
 
 
-itemGroup.Xtramatertials=NMM
 itemGroup.NMMMisc=NMM Misc
 itemGroup.NMMTools=NMM Tools
 itemGroup.NMMCombat=NMM Combat

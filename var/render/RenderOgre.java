@@ -17,7 +17,7 @@ public class RenderOgre extends RenderLiving {
 	@Override
 	protected ResourceLocation getEntityTexture(Entity var1) {
 		// TODO Auto-generated method stub
-		return new ResourceLocation("cm:textures/entity/Ogre.png");
+		return new ResourceLocation("titanium:textures/entity/Ogre.png");
 	}
 
 }

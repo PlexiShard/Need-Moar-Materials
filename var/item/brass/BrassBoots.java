@@ -14,11 +14,11 @@ public class BrassBoots extends ItemArmor {
 
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if(slot == 0 || slot == 1 || slot == 3) {
-            return "cm:textures/models/armor/brass_layer_1.png";
+            return "brass:textures/models/armor/brass_layer_1.png";
  
         }
         else if(slot == 2) {
-            return "cm:textures/models/armor/brass_layer_2.png";
+            return "brass:textures/models/armor/brass_layer_2.png";
         }
         else {
             return null;
