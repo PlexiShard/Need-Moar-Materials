@@ -13,7 +13,6 @@ public class EntityManager {
 	}
 	public static void spawnEntity() {
 		addSnowySpawn(Ogre.class, 1000, 1, 3, EnumCreatureType.monster);
-		addSnowySpawn(Test.class, 1, 1, 3, EnumCreatureType.creature);
 	}
 	public static void addSnowySpawn(Class entityClass, int probability, int min, int max, EnumCreatureType type) {
 		for (int i = 0; i < BiomeGenBase.getBiomeGenArray().length; i++) {
@@ -39,7 +38,6 @@ public class EntityManager {
 	
 	public static void registerEntity() {
 		createEntity(Ogre.class, "Ogre", 0xffffff, 0xC2B151);
-		createEntity(Test.class, "TestMob", 0xffffff, 0x000000);
 	}
 	
 	public static void createEntity(Class classfile, String name, int solidColor, int spotColor) {
