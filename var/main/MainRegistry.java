@@ -13,7 +13,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
-@Mod(modid= "NMM", name = "Need Moar Materials", version = "Alpha")
+@Mod(modid= "NMM", name = "Need Moar Materials", version = "Beta")
 
 public class MainRegistry {
 	
