@@ -18,7 +18,6 @@ public class BrassManager {
 	public static ToolMaterial brass = EnumHelper.addToolMaterial("Brass", 2, 300, 7.5F, 8.5F, 14); 
 	public static ArmorMaterial brassArmor = EnumHelper.addArmorMaterial("Brass", 10, new int[]{3, 7, 5, 3}, 10);
 	
-	public static Item unsmeltedBrass;
 	public static Item brassIngot;
 	public static Item brassSword;
 	public static Item brassHoe;
@@ -30,11 +29,8 @@ public class BrassManager {
 	public static Item brassLeggings;
 	public static Item brassBoots;
 	
-	public static Block brassBlock;
-	
 	public static void initializeItem() {
 		//brass
-    	//unsmeltedBrass = new UnsmeltedBrass().setUnlocalizedName("unsmeltedBrass").setCreativeTab(CreativeTabsManager.nmmRaw);
 		brassSword = new BrassSword(brass).setUnlocalizedName("brassSword").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassSword");
     	brassIngot = new BrassIngot().setUnlocalizedName("brassIngot").setCreativeTab(CreativeTabsManager.nmmRaw).setTextureName("brass:brassIngot");
     	brassPickaxe = new BrassPickaxe(brass).setUnlocalizedName("brassPickaxe").setCreativeTab(CreativeTabsManager.nmmTools).setTextureName("brass:brassPickaxe");

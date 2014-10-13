@@ -74,8 +74,6 @@ public class RecipeManager {
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassChestplate, 1), "b b", "bbb", "bbb", 'b', BrassManager.brassIngot);
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassLeggings, 1), "bbb", "b b", "b b", 'b', BrassManager.brassIngot);
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassBoots, 1), "b b", "b b", 'b', BrassManager.brassIngot);
-			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassBlock, 1), "bbb", "bbb", "bbb", 'b', BrassManager.brassIngot);
-			GameRegistry.addShapelessRecipe(new ItemStack(BrassManager.brassIngot, 9), BrassManager.brassBlock);
 			
 			//elemental swords
 			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.lightningSword, 1), "rlr", "rsr", "rrr", 'r', Items.redstone, 'l', MiscManager.lightningConductor, 's', TitaniumManager.titaniumSword);

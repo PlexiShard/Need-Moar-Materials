@@ -38,8 +38,7 @@ public class BlockManager {
 		//copper
 		copperBlock = new CopperBlock(Material.rock);
 		copperOre = new CopperOre(Material.rock);
-		//brass
-		BrassManager.brassBlock = new BrassBlock(Material.rock);
+
 	}
 	
 	public static void registerBlock() {
@@ -55,7 +54,6 @@ public class BlockManager {
 		//copper
 		GameRegistry.registerBlock(copperOre, copperOre.getUnlocalizedName());
 		GameRegistry.registerBlock(copperBlock, copperBlock.getUnlocalizedName());
-		//brass
-		GameRegistry.registerBlock(BrassManager.brassBlock, BrassManager.brassBlock.getUnlocalizedName());
+
 	}
 }
