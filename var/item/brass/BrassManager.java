@@ -30,7 +30,6 @@ public class BrassManager {
 	public static Item brassBoots;
 	
 	public static void initializeItem() {
-		//brass
 		brassSword = new BrassSword(brass).setUnlocalizedName("brassSword").setCreativeTab(CreativeTabsManager.nmmCombat).setTextureName("brass:brassSword");
     	brassIngot = new BrassIngot().setUnlocalizedName("brassIngot").setCreativeTab(CreativeTabsManager.nmmRaw).setTextureName("brass:brassIngot");
     	brassPickaxe = new BrassPickaxe(brass).setUnlocalizedName("brassPickaxe").setCreativeTab(CreativeTabsManager.nmmTools).setTextureName("brass:brassPickaxe");

@@ -12,9 +12,9 @@ public class EntityManager {
 		spawnEntity();
 	}
 	public static void spawnEntity() {
-		addSnowySpawn(Ogre.class, 1000, 1, 3, EnumCreatureType.monster);
+		snowySpawn(Ogre.class, 1000, 1, 3, EnumCreatureType.monster);
 	}
-	public static void addSnowySpawn(Class entityClass, int probability, int min, int max, EnumCreatureType type) {
+	public static void snowySpawn(Class entityClass, int probability, int min, int max, EnumCreatureType type) {
 		for (int i = 0; i < BiomeGenBase.getBiomeGenArray().length; i++) {
 			if (BiomeGenBase.getBiomeGenArray()[i] == BiomeGenBase.icePlains) {
 				EntityRegistry.addSpawn(entityClass, probability, min, max, type, BiomeGenBase.getBiomeGenArray()[i]);
@@ -32,6 +32,15 @@ public class EntityManager {
 				if (BiomeGenBase.getBiomeGenArray()[i] == null) {
 					
 				}
+			}
+		}
+	}
+	public static void spawnAnywhere(Class entityClass, int probability, int min, int max, EnumCreatureType type) {
+		for (int i = 0; i < BiomeGenBase.getBiomeGenArray().length; i++) {
+			if (BiomeGenBase.getBiomeGenArray()[i] == null) {
+			
+			} else {
+				EntityRegistry.addSpawn(entityClass, probability, min, max, type, BiomeGenBase.getBiomeGenArray()[i]);
 			}
 		}
 	}
