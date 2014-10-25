@@ -15,9 +15,7 @@ public class CopperManager {
 	
 	public static ToolMaterial copper = EnumHelper.addToolMaterial("Copper", 2, 300, 7.0F, 8.0F, 16); 
 	
-	public static Item unsmeltedCopper;
 	public static Item copperIngot;
-	public static Item copperSword;
 	
 	public static void initializeItem() {
 		copperIngot = new CopperIngot().setUnlocalizedName("copperIngot").setCreativeTab(CreativeTabsManager.nmmRaw).setTextureName("copper:copperIngot");
