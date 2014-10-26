@@ -64,7 +64,7 @@ public class RecipeManager {
 			GameRegistry.addShapelessRecipe(new ItemStack(SteelManager.steelIngot, 1), TitaniumManager.titaniumIngot, Items.iron_ingot);
 			
 			//brass
-			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassIngot, 1), "crc", "rsr", "crc", 'c', CopperManager.copperIngot, 'r', Items.redstone, 's', SteelManager.steelIngot);
+			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassIngot, 4), "crc", "rsr", "crc", 'c', CopperManager.copperIngot, 'r', Items.redstone, 's', SteelManager.steelIngot);
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassSword, 1), "i", "i", "s", 'i', BrassManager.brassIngot, 's', Items.stick);
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassPickaxe, 1), "bbb", " s ", " s ", 'b', BrassManager.brassIngot, 's', Items.stick);
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassAxe, 1), "bb", "bs", " s", 'b', BrassManager.brassIngot, 's', Items.stick);
