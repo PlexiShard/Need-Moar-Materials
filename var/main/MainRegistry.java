@@ -44,10 +44,4 @@ public class MainRegistry {
 	public static void PostLoad(FMLPostInitializationEvent PostLoad) {
 		
 	}
-
-	
 }
-
-
-
-
