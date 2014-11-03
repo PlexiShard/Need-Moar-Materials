@@ -16,5 +16,5 @@ public class TitaniumBlock extends Block {
 		this.setResistance(100.0F);
 		this.setHardness(9.0F);
 	}
-
+	
 }

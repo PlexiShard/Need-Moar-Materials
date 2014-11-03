@@ -25,18 +25,28 @@ public class Buildings implements IWorldGenerator {
 		
 	}
 	public void generateSurface(World world, Random random, int x, int z) {
-		spawnTemple(world, random, x, z, 16, 16, 1, 56, 200);
+		spawnTemple(world, random, x, z, 1, 56, 200);
+		spawnQuartzTemple(world, random, x, z, 1, 56, 200);
 	}
 	
 	public void generateNether(World world, Random random, int x, int z) {
 		
 	}
-	public void spawnTemple(World world, Random random, int blockXPos, int blockZPos, int maxX, int maxZ, int chancesToSpawn, int minY, int maxY ) {
+	public void spawnTemple(World world, Random random, int blockXPos, int blockZPos, int chancesToSpawn, int minY, int maxY ) {
 		for(int i = 0; i < chancesToSpawn; i++){
-			int posX = blockXPos + random.nextInt(maxX);
+			int posX = blockXPos + random.nextInt(16);
 			int posY = minY + random.nextInt(maxY -minY);
-			int posZ = blockZPos + random.nextInt(maxZ);
+			int posZ = blockZPos + random.nextInt(16);
 			(new NMMtemple()).generate(world, random, posX, posY, posZ);
+		}
+	}
+	
+	public void spawnQuartzTemple(World world, Random random, int blockXPos, int blockZPos, int chancesToSpawn, int minY, int maxY ) {
+		for(int i = 0; i < chancesToSpawn; i++){
+			int posX = blockXPos + random.nextInt(16);
+			int posY = minY + random.nextInt(maxY -minY);
+			int posZ = blockZPos + random.nextInt(16);
+			(new NMMquartztemple()).generate(world, random, posX, posY, posZ);
 		}
 	}
 }
