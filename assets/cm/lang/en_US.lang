@@ -70,6 +70,8 @@ item.skySword.name=Sky Sword
 item.poisonSword.name=Poison Sword
 item.fireSword.name=Fire Sword
 item.darknessSword.name=Darkness Sword
+item.fireBow.name=Explosive Bow
+item.fireArrow.name=Explosive Arrow
 
 
 item.lightningConductor.name=Lightning Conductor

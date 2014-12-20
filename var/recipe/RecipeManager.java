@@ -75,12 +75,14 @@ public class RecipeManager {
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassLeggings, 1), "bbb", "b b", "b b", 'b', BrassManager.brassIngot);
 			GameRegistry.addShapedRecipe(new ItemStack(BrassManager.brassBoots, 1), "b b", "b b", 'b', BrassManager.brassIngot);
 			
-			//elemental swords
+			//elemental weapons
 			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.lightningSword, 1), "rlr", "rsr", "rrr", 'r', Items.redstone, 'l', MiscManager.lightningConductor, 's', TitaniumManager.titaniumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.poisonSword, 1), " p ", "psp", " d ", 'p', Items.poisonous_potato, 's', TitaniumManager.titaniumSword, 'd', PlatinumManager.platinumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.skySword, 1), " p ", "fsf", " p ", 'p', Blocks.piston, 'f', Items.feather, 's', TitaniumManager.titaniumSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.darknessSword, 1), "ded", " s ", "d d", 'd', MiscManager.darknessDust, 's', TitaniumManager.titaniumSword, 'e', SteelManager.steelSword);
 			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.fireSword, 1), " l ", "bsb", "fmf", 'l', Items.lava_bucket, 'b', Items.blaze_powder, 's', TitaniumManager.titaniumSword, 'f', Items.flint_and_steel);
+			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.fireBow, 1), "fpf", "pbp", "fpf", 'f', Items.fire_charge, 'p', Items.blaze_powder, 'b', Items.bow);
+			GameRegistry.addShapedRecipe(new ItemStack(ElementalManager.fireArrow, 4), " f ", "pap", " p ", 'f', Items.fire_charge, 'p', Items.blaze_powder, 'a', Items.arrow);
 			
 			//misc. items
 			GameRegistry.addShapedRecipe(new ItemStack(MiscManager.lightningConductor, 1), "x", "x", "x", 'x', TitaniumManager.titaniumIngot);
