@@ -1,7 +1,5 @@
 package var.render;
 
-import var.lib.StringLibrary;
-
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
