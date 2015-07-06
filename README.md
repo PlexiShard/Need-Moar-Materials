@@ -20,15 +20,10 @@ If you are using Forge (without Modloader) go to your Application Data folder, a
 ##Extension Packs
 Soon, we will have an extension pack called BlocksonBlocks and Steam City, if you would like more information, email us at PlexiShardStudios@gmail.com!
 
-###Steam City
-Steam city is an optional extension pack, that also requires NMM core to function because of the blocks used. To install, go to "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and select the Steam City Extension pack, *if you use the pre-release it may not work!*
-
-The Steam City is a city that is very steam-punk styled, and you fight a boss there. To get there, you must create a Steam City Teleporter block. Remember, once you go there, you can't come back until you have beaten the boss, (sort of like The End). Once you get there, go to all the buildings to collect keys, and once you have all four keys, go to the main room to open up the door. The boss is extremly hard to beat, but very rewarding. *its still in alpha testing, so it wont be released until it works. (not any time soon)*
-
 ###BlocksonBlocks
 BlocksonBlocks is an optional extension pack, that also requires NMM core to function because of the blocks used. To install, go to "[Releases](https://github.com/PlexiShard/Xtra-materials-mod/releases)" in GitHub, and select the BlocksonBlocks Extension pack, *if you use the pre-release it may not work!*
 
-BlocksonBlocks is a mod we have been wanting to make for a while now, it enables anyone to make a block of a block, so that will make it easier to store things and there are other things useful about it too, these blocks are stronger, harder to mine, less resistant to explosions, and other things! *its still in alpha testing, so it wont be released until it works. (not any time soon)*
+BlocksonBlocks is a mod we have been wanting to make for a while now, it enables anyone to make a block of a block, so that will make it easier to store things and there are other things useful about it too, these blocks are stronger, harder to mine, less resistant to explosions, and other things! *It's still in alpha testing, and it wont be released until it works. (not any time soon)*
 
 ##Errors and Help
 If you need help, or want to report an error, please post an issue in the "[Issues](https://github.com/PlexiShard/Need-Moar-Materials/issues)" section on GitHub!
