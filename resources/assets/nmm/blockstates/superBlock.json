@@ -1,0 +1,6 @@
+{
+	"variants": {
+		"normal": { "model": "nmm:superBlock" },
+        "inventory": { "model": "nmm:superBlock" }
+	}
+}

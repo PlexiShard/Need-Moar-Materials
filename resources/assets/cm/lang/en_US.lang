@@ -1,0 +1,90 @@
+item.superItem.name=Super Item
+item.highLighter.name=High Concentration Fire Starter
+
+tile.TitaniumOre.name=Titanium Ore
+tile.TitaniumBlock.name=Titanium Block
+
+item.titaniumIngot.name=Titanium Ingot
+item.lightningSword.name=Lightning Sword
+item.titaniumPickaxe.name=Titanium Pickaxe
+item.titaniumShovel.name=Titanium Shovel
+item.titaniumSword.name=Titanium Sword
+item.titaniumHoe.name=Titanium Hoe
+item.titaniumAxe.name=Titanium Axe
+item.titaniumHelmet.name=Titanium Helmet
+item.titaniumChestplate.name=Titanium Chestplate
+item.titaniumLeggings.name=Titanium Leggings
+item.titaniumBoots.name=Titanium Boots
+item.unsmeltedTitanium.name=Unsmelted Titanium
+
+
+tile.PlatinumOre.name=Platinum Ore
+tile.PlatinumBlock.name=Platinum Block
+
+item.platinumIngot.name=Platinum Ingot
+item.platinumHoe.name=Platinum Hoe
+item.platinumPickaxe.name=Platinum Pickaxe
+item.platinumShovel.name=Platinum Shovel
+item.platinumSword.name=Platinum Sword
+item.platinumAxe.name=Platinum Axe
+item.platinumHelmet.name=Platinum Helmet
+item.platinumChestplate.name=Platinum Chestplate
+item.platinumLeggings.name=Platinum Leggings
+item.platinumBoots.name=Platinum Boots
+
+
+tile.SteelOre.name=Steel Ore
+tile.SteelBlock.name=Steel Block
+
+item.steelIngot.name=Steel Ingot
+item.steelAxe.name=Steel Axe
+item.steelHoe.name=Steel Hoe
+item.steelShovel.name=Steel Shovel
+item.steelSword.name=Steel Sword
+item.steelPickaxe.name=Steel Pickaxe
+item.steelHelmet.name=Steel Helmet
+item.steelChestplate.name=Steel Chestplate
+item.steelLeggings.name=Steel Leggings
+item.steelBoots.name=Steel Boots
+
+
+tile.CopperOre.name=Copper Ore
+tile.CopperBlock.name=Copper Block
+
+item.copperIngot.name=Copper Ingot
+
+
+tile.BrassBlock.name=Brass Block
+
+item.brassIngot.name=Brass Ingot
+item.brassSword.name=Brass Sword
+item.brassPickaxe.name=Brass Pickaxe
+item.brassShovel.name=Brass Shovel
+item.brassHoe.name=Brass Hoe
+item.brassAxe.name=Brass Axe
+item.brassHelmet.name=Brass Helmet
+item.brassChestplate.name=Brass Chestplate
+item.brassLeggings.name=Brass Leggings
+item.brassBoots.name=Brass Boots
+
+
+item.lightningRod.name=Lightning Sword
+item.skySword.name=Sky Sword
+item.poisonSword.name=Poison Sword
+item.fireSword.name=Fire Sword
+item.darknessSword.name=Darkness Sword
+item.fireBow.name=Explosive Bow
+item.fireArrow.name=Explosive Arrow
+
+
+item.lightningConductor.name=Lightning Conductor
+item.darknessDust.name=Darkness Dust
+
+
+itemGroup.nmmTools=Tools (NMM)
+itemGroup.nmmCombat=Combat (NMM)
+itemGroup.nmmBlocks=Blocks (NMM)
+itemGroup.nmmRaw=Raw Materials (NMM)
+
+
+entity.Ogre.name=Snow Troll
