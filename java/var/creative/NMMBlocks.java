@@ -8,13 +8,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class NMMBlocks extends CreativeTabs {
 
-	public NMMBlocks(String label) {
-		super(label);
-	}
+	public NMMBlocks(String label) 
+	{	super(label);}
 
 	@SideOnly(Side.CLIENT)
-	public Item getTabIconItem() {
-		return Item.getItemFromBlock(BlockManager.titaniumOre);
-	}
+	public Item getTabIconItem() 
+	{	return Item.getItemFromBlock(BlockManager.titaniumOre);}
 
 }

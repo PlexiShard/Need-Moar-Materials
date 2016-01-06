@@ -7,12 +7,12 @@ import var.item.ItemManager;
 public class PreInit 
 {	public PreInit() 
 	{	LogHelper.logInfo("Begining PreInit phase...");
-		new NMMTabManager();
-		LogHelper.logInfo("Creative Tabs Registered");
 		new ItemManager();
 		LogHelper.logInfo("Items Registered");
 		new BlockManager();
 		LogHelper.logInfo("Blocks Registered");
+		new NMMTabManager();
+		LogHelper.logInfo("Creative Tabs Registered");
 		//entities
 		//recipies
 		LogHelper.logInfo("Recipies Registered");
