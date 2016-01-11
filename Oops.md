@@ -3,3 +3,5 @@ By pushing all commits that I had created without pulling the pre-existing commi
 Well, at least it's far more cleaned up and actually works...
 
 I found a backup with all the commits and history. Pushed that to the /old branch. Check that branch for the history.
+
+The /develop branch is for bug fixes and general code pushes, with master being for completed, functional changes
