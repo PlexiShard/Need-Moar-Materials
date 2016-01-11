@@ -3,7 +3,7 @@ package var.base;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class BaseItem extends Item implements IItem {
+public class BaseItem extends Item {
 
 	public static String name;
 	public static String uname;

@@ -5,7 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
-public class BaseBlock extends Block implements IItem{
+public class BaseBlock extends Block{
 	public BaseBlock(Material materialIn) {
 		super(materialIn);
 	}
