@@ -269,7 +269,7 @@ public class SkyBiome extends BiomeGenBase {
      */
     public float getSpawningChance()
     {
-        return 0.1F;
+        return 0.0F;
     }
 
     public void decorate(World worldIn, Random p_180624_2_, BlockPos p_180624_3_)
