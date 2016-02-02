@@ -6,37 +6,50 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
 public class BaseBlock extends Block{
+	/**Initializes BaseBlock
+	 * 
+	 * @param materialIn
+	 * Sets the block material*/
 	public BaseBlock(Material materialIn) {
 		super(materialIn);
 	}
 
-	public static String name;
+	/**Used to stored the unlocalizedName until it is registered*/
 	public static String uname;
+	/**Unknown Usage*/
 	public static String texture;
+	/**Used to stored the CreativeTab until it is registered*/
 	public static CreativeTabs tab;
-	public static float resistance;
-	public static float hardness;
-	
-	public String getName() {return name();}
-	public String getUName() {return uname();}
+	/**Returns the texture*/
 	public String getTexture() {return texture();}
-	public CreativeTabs getTab() {return tab();}
-	public float getResistance() {return resistance;}
-	public float getHardness() {return hardness;}
-	
-	public String name() {return name;}
-	public String uname() {return uname;}
+	/**Returns the texture*/
 	public String texture() {return texture;}
-	public CreativeTabs tab() {return tab;}
 	
+	/**
+	 * @param newuname
+	 * Unlocalized Name to be returned in Block
+	 * 
+	 * @param newtab
+	 * CreativeTab to be returned in Block
+	 * 
+	 * @param texture
+	 * String to be used for the texture .json
+	 * 
+	 * @param resistance
+	 * Float to be returned in Block
+	 * 
+	 * @param hardness
+	 * Float to be returned in Block
+	 * 
+	 * @return A Block with set Hardness, Resistance, Unlocalized Name, and Creative Tab
+	 * */
 	public Block setup(String newuname, CreativeTabs newtab, String texture, float resistance, float hardness) 
 	{	tab = newtab;
 		this.setCreativeTab(tab);
 		uname = newuname;
 		this.setUnlocalizedName(uname);
 		this.setResistance(resistance);
-		this.resistance = resistance;
 		this.setHardness(hardness);
-		this.hardness = hardness;
 		return this;
-}	}
+	}	
+}
