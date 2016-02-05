@@ -1,6 +1,7 @@
 package var.main;
 
 import var.block.BlockManager;
+import var.crafting.CraftingRegistry;
 import var.creative.NMMTabManager;
 import var.item.ItemManager;
 
@@ -27,8 +28,8 @@ public class PreInit
 		/*TODO put entity registry here*/
 		
 		//Crafting registry
-		//new CraftingRegistry();
-		//LogHelper.logInfo("Recipies Registered");
+		new CraftingRegistry();
+		LogHelper.logInfo("Recipies Registered");
 		
 		LogHelper.logInfo("PreInit Complete. Starting Init...");
 	}
