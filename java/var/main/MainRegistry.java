@@ -17,6 +17,7 @@ import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import var.dimension.sky.SkyBiome;
+import var.world.Generate;
 
 @Mod(modid = MainRegistry.MODID, name = MainRegistry.NAME, version = MainRegistry.VERSION)
 public class MainRegistry 
@@ -33,7 +34,10 @@ public class MainRegistry
 	/**Events which should be run when this mod is first loaded (mostly for creating new values and objects)*/
 	@EventHandler
 	public void PreLoad(FMLPreInitializationEvent PreEvent) 
-	{	new PreInit();	}
+	{	new PreInit();
+		GameRegistry.registerWorldGenerator(new Generate(), 1);
+		LogHelper.logInfo("Registered world generators");
+	}
 	
 	/**Events which should be run when this mod reaches the Init state (mostly for adding textures and models)*/
 	@EventHandler
