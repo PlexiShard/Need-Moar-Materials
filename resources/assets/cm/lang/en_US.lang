@@ -1,8 +1,9 @@
-item.SuperItem.name=Super Item
+item.superItem.name=Super Item
 item.highLighter.name=High Concentration Fire Starter
+tile.superBlock.name=Super Block
 
-tile.TitaniumOre.name=Titanium Ore
-tile.TitaniumBlock.name=Titanium Block
+tile.titaniumOre.name=Titanium Ore
+tile.titaniumBlock.name=Titanium Block
 
 item.titaniumIngot.name=Titanium Ingot
 item.lightningSword.name=Lightning Sword
@@ -18,8 +19,8 @@ item.titaniumBoots.name=Titanium Boots
 item.unsmeltedTitanium.name=Unsmelted Titanium
 
 
-tile.PlatinumOre.name=Platinum Ore
-tile.PlatinumBlock.name=Platinum Block
+tile.platinumOre.name=Platinum Ore
+tile.platinumBlock.name=Platinum Block
 
 item.platinumIngot.name=Platinum Ingot
 item.platinumHoe.name=Platinum Hoe
@@ -33,8 +34,8 @@ item.platinumLeggings.name=Platinum Leggings
 item.platinumBoots.name=Platinum Boots
 
 
-tile.SteelOre.name=Steel Ore
-tile.SteelBlock.name=Steel Block
+tile.steelOre.name=Steel Ore
+tile.steelBlock.name=Steel Block
 
 item.steelIngot.name=Steel Ingot
 item.steelAxe.name=Steel Axe
@@ -48,13 +49,13 @@ item.steelLeggings.name=Steel Leggings
 item.steelBoots.name=Steel Boots
 
 
-tile.CopperOre.name=Copper Ore
-tile.CopperBlock.name=Copper Block
+tile.copperOre.name=Copper Ore
+tile.copperBlock.name=Copper Block
 
 item.copperIngot.name=Copper Ingot
 
 
-tile.BrassBlock.name=Brass Block
+tile.brassBlock.name=Brass Block
 
 item.brassIngot.name=Brass Ingot
 item.brassSword.name=Brass Sword

@@ -8,20 +8,27 @@ public class PreInit
 {	public PreInit() 
 	{	LogHelper.logInfo("Begining PreInit phase...");
 		
+		//Creative Tab registry
 		new NMMTabManager();
 		LogHelper.logInfo("Creative Tabs Registered");
+		
+		//Item registry
 		new ItemManager();
 		LogHelper.logInfo("Items Registered");
+		
+		//Block registry
 		new BlockManager();
 		LogHelper.logInfo("Blocks Registered");
 		
+		//Creative Tab icons registry (Tabs must be before Items, and Icons after Items)
 		NMMTabManager.registerIcons();
 		LogHelper.logInfo("Creative Tab Icons Registered");
 		
-		//entities
-		//recipies
-		LogHelper.logInfo("Recipies Registered");
-		//render mobs
+		/*TODO put entity registry here*/
+		
+		//Crafting registry
+		//new CraftingRegistry();
+		//LogHelper.logInfo("Recipies Registered");
 		
 		LogHelper.logInfo("PreInit Complete. Starting Init...");
 	}

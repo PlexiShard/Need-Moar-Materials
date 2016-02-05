@@ -5,17 +5,18 @@ import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
+import net.minecraft.client.renderer.entity.RenderPlayer;;
 
 public class BaseArmor extends ItemArmor{
 
 	/**
-	 * Creates BaseArmor as ItemArmor, with additional functions and variables
+	 * Creates BaseArmor as {@link ItemArmor}, with additional functions and variables
 	 * 
 	 * @param material
-	 * The EnumArmorMaterial used for this ItemArmor 
+	 * The {@link ArmorMaterial} used for this {@link ItemArmor}
 	 * 
 	 * @param renderIndex
-	 * Used on RenderPlayer to select the correspondent armor to be rendered on the player: 0 is cloth, 1 is chain, 2 is iron, 3 is diamond and 4 is gold.
+	 * Used on {@link RenderPlayer} to select the correspondent armor to be rendered on the player: 0 is cloth, 1 is chain, 2 is iron, 3 is diamond and 4 is gold.
 	 * 
 	 * @param armorType
 	 * Stores the armor type: 0 is helmet, 1 is plate, 2 is legs and 3 is boots */
@@ -28,22 +29,25 @@ public class BaseArmor extends ItemArmor{
 	public static CreativeTabs tab;
 	/**Used to temporarily store the unlocalizedName until it is registered*/
 	public static String unlocalizedName;
+	/**Stores the link to the {@link BaseArmor}'s texture json file until it can be registered in the {@link var.main.MainRegistry#Load Init} stage*/
+	public String texture;
 
+	public String texture() {return texture;}
 	
-	/**Returns an Item with ItemArmor functions
+	/**Returns an {@link Item} with {@link ItemArmor} functions
 	 * 
 	 * @deprecated
 	 * @param newname
 	 * New value for BaseArmor.name
 	 * 
 	 * @param newtab
-	 * The CreativeTab which you want the Armor to be found under
+	 * The {@link CreativeTabs} which you want the Armor to be found under
 	 * 
 	 * @param newuname
 	 * The value you want BaseArmor to utilize for its unlocalizedName
 	 * 
 	 * @return 
-	 * An item with a set CreativeTab and unlocalizedName*/
+	 * An item with a set {@link CreativeTabs} and unlocalizedName*/
 	public Item setup(String newname, CreativeTabs newtab, String newuname) {
 		tab = newtab;
 		this.setCreativeTab(tab);
@@ -52,16 +56,16 @@ public class BaseArmor extends ItemArmor{
 		return this;
 	}
 	
-	/**Returns an Item with ItemArmor functions
+	/**Returns an {@link Item} with {@link ItemArmor} functions
 	 * 
 	 * @param newtab
-	 * The CreativeTab which you want the Armor to be found under
+	 * The {@link CreativeTabs} which you want the Armor to be found under
 	 * 
 	 * @param newuname
 	 * The value you want BaseArmor to utilize for its unlocalizedName
 	 * 
 	 * @return 
-	 * An item with a set CreativeTab and unlocalizedName*/
+	 * An item with a set {@link CreativeTabs} and unlocalizedName*/
 	public Item setup(CreativeTabs newtab, String newuname) {
 		tab = newtab;
 		this.setCreativeTab(tab);
@@ -95,5 +99,5 @@ public class BaseArmor extends ItemArmor{
 		} else {
 			return null;
 		}
-	}
+	}	
 }

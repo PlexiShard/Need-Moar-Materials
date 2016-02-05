@@ -9,16 +9,16 @@ public class BaseBlock extends Block{
 	/**Initializes BaseBlock
 	 * 
 	 * @param materialIn
-	 * Sets the block material*/
+	 * Sets the {@link Block} {@link Material}*/
 	public BaseBlock(Material materialIn) {
 		super(materialIn);
 	}
 
 	/**Used to stored the unlocalizedName until it is registered*/
 	public static String uname;
-	/**Unknown Usage*/
-	public static String texture;
-	/**Used to stored the CreativeTab until it is registered*/
+	/**Used for Texture handling*/
+	public String texture;
+	/**Used to stored the {@link CreativeTabs} until it is registered*/
 	public static CreativeTabs tab;
 	/**Returns the texture*/
 	public String getTexture() {return texture();}
@@ -27,19 +27,19 @@ public class BaseBlock extends Block{
 	
 	/**
 	 * @param newuname
-	 * Unlocalized Name to be returned in Block
+	 * Unlocalized Name to be returned in {@link Block}
 	 * 
 	 * @param newtab
-	 * CreativeTab to be returned in Block
+	 * {@link CreativeTab} to be returned in {@link Block}
 	 * 
 	 * @param texture
 	 * String to be used for the texture .json
 	 * 
 	 * @param resistance
-	 * Float to be returned in Block
+	 * Float to be returned in {@link Block}'s resistance
 	 * 
 	 * @param hardness
-	 * Float to be returned in Block
+	 * Float to be returned in the {@link Block}'s hardness
 	 * 
 	 * @return A Block with set Hardness, Resistance, Unlocalized Name, and Creative Tab
 	 * */
@@ -50,6 +50,7 @@ public class BaseBlock extends Block{
 		this.setUnlocalizedName(uname);
 		this.setResistance(resistance);
 		this.setHardness(hardness);
+		this.texture = texture;
 		return this;
 	}	
 }

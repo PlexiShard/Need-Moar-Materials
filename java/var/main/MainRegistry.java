@@ -25,14 +25,17 @@ public class MainRegistry
 	public final static String VERSION = "Beta 1.0";
 	public static BiomeGenBase skyBiome = new SkyBiome(SkyBiome.getEmptyBiomeID(), true).setBiomeName("skyBiome").setHeight(new Height(1.5f, 0.05f));  
 
+	/**Events which should occur when a server starts with this mod enabled*/
 	@EventHandler
 	public void serverStart(FMLServerStartedEvent event)
 	{}
 
+	/**Events which should be run when this mod is first loaded (mostly for creating new values and objects)*/
 	@EventHandler
 	public void PreLoad(FMLPreInitializationEvent PreEvent) 
 	{	new PreInit();	}
 	
+	/**Events which should be run when this mod reaches the Init state (mostly for adding textures and models)*/
 	@EventHandler
 	public void Load(FMLInitializationEvent event) 
 	{	if (event.getSide() == Side.CLIENT)
@@ -40,9 +43,11 @@ public class MainRegistry
 			proxy.addTextures();
 			LogHelper.logInfo("Setting Textures");
 		}	
+	
 		LogHelper.logInfo("Init phase complete. Begining PostInit...");
 	}
 	
+	/**Events which should be run when this mod reaches the PostInit state (Unknown usage)*/
 	@EventHandler
 	public void PostLoad(FMLPostInitializationEvent PostLoad) 
 	{	LogHelper.logInfo("PostInit complete. NMM fully initialized");	}
