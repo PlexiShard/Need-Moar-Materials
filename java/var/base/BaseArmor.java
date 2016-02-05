@@ -22,7 +22,10 @@ public class BaseArmor extends ItemArmor{
 	 * Stores the armor type: 0 is helmet, 1 is plate, 2 is legs and 3 is boots */
 	public BaseArmor(ArmorMaterial material, int renderIndex, int armorType) {
 		super(material, renderIndex, armorType);
-		// TODO Auto-generated constructor stub
+	}
+	public BaseArmor(ArmorMaterial material, int armorType, String uname, CreativeTabs tab, String texture) {
+		super(material, 0, armorType);
+		this.setupThis(uname, tab, texture);
 	}
 	
 	/**Used to temporarily store the CreativeTab until it is registered*/
@@ -72,6 +75,19 @@ public class BaseArmor extends ItemArmor{
 		unlocalizedName = newuname;
 		this.setUnlocalizedName(unlocalizedName);
 		return this;
+	}
+	
+	/**Sets the {@link BaseArmor}'s own variables so it can be used like an {@link Item} but with easier access to textures
+	 * @param newuname The UnlocalizedName to be used.
+	 * @param newtab The {@link CreativeTabs CreativeTab} which the {@link BaseArmor} will be listed under
+	 * @param texture The name of the .json file the texture will use. Called by the {@link var.main.TextureHandler TextureHandler} and {@link var.main.ClientProxy ClientProxy}
+	 * */
+	public void setupThis(String newuname, CreativeTabs newtab, String texture) 
+	{	tab = newtab;
+		this.setCreativeTab(tab);
+		unlocalizedName = newuname;
+		this.setUnlocalizedName(unlocalizedName);
+		this.texture = texture;
 	}
 	
 	/**Sets the Armor Texture according to this.getArmorMaterial, allowing automatic texture setting.

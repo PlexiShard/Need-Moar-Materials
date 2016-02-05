@@ -1,11 +1,10 @@
 package var.main;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import var.block.BlockManager;
-import var.item.ItemManager;
 
 public class TextureHandler {
 	public static ArrayList<Item> items= new ArrayList<Item>();

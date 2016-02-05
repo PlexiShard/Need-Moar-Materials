@@ -23,8 +23,10 @@ public class BaseAxe extends BaseTool{
      * {@link ToolMaterial} for BaseAxe
      * */
     public BaseAxe(Item.ToolMaterial material)
-    {
+    {	super(3.0F, material, EFFECTIVE_ON);}
+    public BaseAxe(Item.ToolMaterial material, String uname, CreativeTabs tab, String texture)
     {	super(3.0F, material, EFFECTIVE_ON);
+        this.setupThis(uname, tab, texture);
     }
 
     /**

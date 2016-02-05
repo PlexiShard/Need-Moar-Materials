@@ -20,34 +20,34 @@ public TitaniumManager(){init();register();}
 	
 	public static ToolMaterial titanium = EnumHelper.addToolMaterial("Titanium", 3, 500, 8.0F, 6.0F, 14);
 	public static ArmorMaterial titaniumArmor = EnumHelper.addArmorMaterial("TITANIUM", "Titanium", 15, new int[]{4, 8, 6, 4}, 12);
-	public static Item titaniumIngot;
-	public static Item titaniumSword;
-	public static Item titaniumHoe;
-	public static Item titaniumShovel;
-	public static Item titaniumPickaxe;
-	public static Item titaniumAxe;
-	public static Item titaniumHelmet;
-	public static Item titaniumChestplate;
-	public static Item titaniumLeggings;
-	public static Item titaniumBoots;
-	public static Item unsmeltedTitanium;
-	public static Item lightningRod;
+	public static BaseItem titaniumIngot;
+	public static BaseItem titaniumSword;
+	public static BaseItem titaniumHoe;
+	public static BaseItem titaniumShovel;
+	public static BaseItem titaniumPickaxe;
+	public static BaseItem titaniumAxe;
+	public static BaseArmor titaniumHelmet;
+	public static BaseArmor titaniumChestplate;
+	public static BaseArmor titaniumLeggings;
+	public static BaseArmor titaniumBoots;
+	public static BaseItem unsmeltedTitanium;
+	public static BaseItem lightningRod;
 	
 	
 	@Override
 	public void init() {
-		titaniumIngot = new BaseItem().setup("titaniumIngot", NMMTabManager.nmmRaw, "titaniumIngot");
-		titaniumSword = new BaseSword(titanium).setup("titaniumSword", NMMTabManager.nmmCombat, "titaniumSword");
-		titaniumHoe = new BaseHoe(titanium).setup("titaniumHoe", NMMTabManager.nmmTools, "titaniumHoe");
-		titaniumShovel = new BaseSpade(titanium).setup("titaniumShovel", NMMTabManager.nmmTools, "titaniumShovel");
-		titaniumPickaxe = new BasePickaxe(titanium).setup("titaniumPickaxe", NMMTabManager.nmmTools, "titaniumPickaxe");
-		titaniumAxe = new BaseAxe(titanium).setup("titaniumAxe", NMMTabManager.nmmTools, "titaniumAxe");
-		titaniumHelmet = new BaseArmor(titaniumArmor, 0, 0).setup("TitaniumHelmet", NMMTabManager.nmmCombat, "titaniumHelmet");
-		titaniumChestplate = new BaseArmor(titaniumArmor, 0, 1).setup("TitaniumChestplate", NMMTabManager.nmmCombat, "titaniumChestplate");
-		titaniumLeggings = new BaseArmor(titaniumArmor, 0, 2).setup("TitaniumLeggings", NMMTabManager.nmmCombat, "titaniumLeggings");
-		titaniumBoots = new BaseArmor(titaniumArmor, 0, 3).setup("TitaniumBoots", NMMTabManager.nmmCombat, "titaniumBoots");
-		unsmeltedTitanium = new BaseItem().setup("unsmeltedTitanium", NMMTabManager.nmmRaw, "unsmeltedTitanium");
-		lightningRod = new BaseItem().setup("lightningConductor", NMMTabManager.nmmRaw, "lightningConductor").setMaxStackSize(1);
+		titaniumIngot = new BaseItem("titaniumIngot", NMMTabManager.nmmRaw, "titaniumIngot");
+		titaniumSword = new BaseSword(titanium, "titaniumSword", NMMTabManager.nmmCombat, "titaniumSword");
+		titaniumHoe = new BaseHoe(titanium, "titaniumHoe", NMMTabManager.nmmTools, "titaniumHoe");
+		titaniumShovel = new BaseSpade(titanium, "titaniumShovel", NMMTabManager.nmmTools, "titaniumShovel");
+		titaniumPickaxe = new BasePickaxe(titanium, "titaniumPickaxe", NMMTabManager.nmmTools, "titaniumPickaxe");
+		titaniumAxe = new BaseAxe(titanium, "titaniumAxe", NMMTabManager.nmmTools, "titaniumAxe");
+		titaniumHelmet = new BaseArmor(titaniumArmor, 0, "titaniumHelmet", NMMTabManager.nmmCombat, "titaniumHelmet");
+		titaniumChestplate = new BaseArmor(titaniumArmor, 1, "titaniumChestplate", NMMTabManager.nmmCombat, "titaniumChestplate");
+		titaniumLeggings = new BaseArmor(titaniumArmor, 2, "titaniumLeggings", NMMTabManager.nmmCombat, "titaniumLeggings");
+		titaniumBoots = new BaseArmor(titaniumArmor, 3, "titaniumBoots", NMMTabManager.nmmCombat, "titaniumBoots");
+		unsmeltedTitanium = new BaseItem("unsmeltedTitanium", NMMTabManager.nmmRaw, "unsmeltedTitanium");
+		lightningRod = new BaseItem("lightningConductor", NMMTabManager.nmmRaw, "lightningConductor").setMaxStackSize(1);
 	}
 	
 	@Override

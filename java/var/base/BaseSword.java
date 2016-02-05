@@ -30,6 +30,14 @@ public class BaseSword extends BaseItem {
         this.setCreativeTab(CreativeTabs.tabCombat);
         this.attackDamage = 4.0F + material.getDamageVsEntity();
     }
+    public BaseSword(Item.ToolMaterial material, String uname, CreativeTabs tab, String texture)
+    {	this.material = material;
+        this.maxStackSize = 1;
+        this.setMaxDamage(material.getMaxUses());
+        this.setCreativeTab(CreativeTabs.tabCombat);
+        this.attackDamage = 4.0F + material.getDamageVsEntity();
+        this.setupThis(uname, tab, texture);
+    }
 
     public float getDamageVsEntity()
     {	return this.material.getDamageVsEntity();	}

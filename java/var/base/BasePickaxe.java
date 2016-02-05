@@ -17,7 +17,11 @@ public class BasePickaxe extends BaseTool{
 
     public BasePickaxe(Item.ToolMaterial material)
     {	super(2.0F, material, EFFECTIVE_ON);	}
-
+    public BasePickaxe(Item.ToolMaterial material, String uname, CreativeTabs tab, String texture)
+    {	super(2.0F, material, EFFECTIVE_ON);
+    	setupThis(uname, tab, texture);
+    }
+    
     public boolean canHarvestBlock(Block blockIn)
     {	return blockIn == Blocks.obsidian ? this.toolMaterial.getHarvestLevel() == 3 : (blockIn != Blocks.diamond_block && blockIn != Blocks.diamond_ore ? (blockIn != Blocks.emerald_ore && blockIn != Blocks.emerald_block ? (blockIn != Blocks.gold_block && blockIn != Blocks.gold_ore ? (blockIn != Blocks.iron_block && blockIn != Blocks.iron_ore ? (blockIn != Blocks.lapis_block && blockIn != Blocks.lapis_ore ? (blockIn != Blocks.redstone_ore && blockIn != Blocks.lit_redstone_ore ? (blockIn.getMaterial() == Material.rock ? true : (blockIn.getMaterial() == Material.iron ? true : blockIn.getMaterial() == Material.anvil)) : this.toolMaterial.getHarvestLevel() >= 2) : this.toolMaterial.getHarvestLevel() >= 1) : this.toolMaterial.getHarvestLevel() >= 1) : this.toolMaterial.getHarvestLevel() >= 2) : this.toolMaterial.getHarvestLevel() >= 2) : this.toolMaterial.getHarvestLevel() >= 2);	}
 

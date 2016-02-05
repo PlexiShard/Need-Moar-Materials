@@ -31,6 +31,13 @@ public class BaseHoe extends BaseItem{
         this.setMaxDamage(material.getMaxUses());
         this.setCreativeTab(CreativeTabs.tabTools);
     }
+    
+    public BaseHoe(Item.ToolMaterial material, String newuname, CreativeTabs newtab, String texture)
+    {	this.theToolMaterial = material;
+    	this.maxStackSize = 1;
+    	this.setMaxDamage(material.getMaxUses());
+    	this.setupThis(newuname, newtab, texture);
+    }
 
     /**
      * Called when the BaseHoe is right-clicked on a {@link Block}.<br/><br/> 

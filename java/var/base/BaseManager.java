@@ -16,6 +16,26 @@ public class BaseManager{
 
 	
 	
+	public void regItem(BaseItem item) {
+		String name = item.getUnlocalizedName().replaceAll("item.", "");
+		String texture = item.texture();
+		GameRegistry.registerItem((Item)item, name);
+		TextureHandler.addItemTexture((Item)item, texture);
+	}
+	public void regItem(BaseArmor item) {
+		String name = item.getUnlocalizedName().replaceAll("item.", "");
+		String texture = item.texture();
+		GameRegistry.registerItem((Item)item, name);
+		TextureHandler.addItemTexture((Item)item, texture);
+	}
+	
+	public void regBlock(BaseBlock block) {
+		String name = block.getUnlocalizedName().replaceAll("tile.", "");
+		String texture = block.texture();
+		GameRegistry.registerBlock((Block)block, name);
+		TextureHandler.addBlockTexture((Block)block, texture);
+	}
+	
 	public void regItem(Item item) {
 		String name = item.getUnlocalizedName().replaceAll("item.", "");
 		GameRegistry.registerItem(item, name);

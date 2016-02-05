@@ -19,5 +19,6 @@ public class ItemManager extends BaseManager{
 		new TitaniumManager();
 		new SteelManager();
 		new PlatinumManager();
+		new ElementalManager();
 	}
 }

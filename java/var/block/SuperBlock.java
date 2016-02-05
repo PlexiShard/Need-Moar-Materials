@@ -12,8 +12,9 @@ import var.item.ElementalManager;
 
 public class SuperBlock extends BaseBlock {
 
-	public SuperBlock(Material materialIn) {
-		super(materialIn);
+	public SuperBlock(Material materialIn, String newuname, CreativeTabs newtab, String texture, float resistance,
+			float hardness) {
+		super(materialIn, newuname, newtab, texture, resistance, hardness);
 		// TODO Auto-generated constructor stub
 	}
 	

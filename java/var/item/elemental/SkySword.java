@@ -1,15 +1,16 @@
 package var.item.elemental;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemStack;
+import var.base.BaseCreativeTab;
 import var.base.BaseSword;
 
 public class SkySword extends BaseSword {
-
-	public SkySword(ToolMaterial p_i45356_1_) {
-		super(p_i45356_1_);
-		// TODO Auto-generated constructor stub
+	
+	public SkySword(ToolMaterial material, String uname, CreativeTabs tab, String texture) {
+		super(material, uname, tab, texture);
 	}
 
 	@Override

@@ -3,6 +3,7 @@ package var.item;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
+import var.base.BaseItem;
 import var.base.BaseManager;
 import var.creative.NMMTabManager;
 import var.item.elemental.DarknessSword;
@@ -17,28 +18,32 @@ import var.item.elemental.SuperItem;
 
 public class ElementalManager extends BaseManager{
 	
+	public ElementalManager(){init();register();}
+	
 	public static ToolMaterial elemental = EnumHelper.addToolMaterial("Elemental", 2, 100, 2.0F, 4.0F, 14);
 	
-	public static Item lightningSword;
-	public static Item poisonSword;
-	public static Item skySword;
-	public static Item fireSword;
-	public static Item darknessSword;
-	public static Item fireBow;
-	public static Item fireArrow;
-	public static Item superItem;
-	public static Item highLighter;
+	public static BaseItem lightningSword;
+	public static BaseItem poisonSword;
+	public static BaseItem skySword;
+	public static BaseItem fireSword;
+	public static BaseItem darknessDust;
+	public static BaseItem darknessSword;
+	public static BaseItem fireBow;
+	public static BaseItem fireArrow;
+	public static BaseItem superItem;
+	public static BaseItem highLighter;
 	
 	@Override public void init() {
-		lightningSword = new LightningSword(elemental).setup("lightningSword", NMMTabManager.nmmCombat, "lightningSword").setMaxDamage(100);
-    	poisonSword = new PoisonSword(elemental).setup("poisonSword", NMMTabManager.nmmCombat, "poisonSword").setMaxDamage(100);
-    	skySword = new SkySword(elemental).setup("skySword", NMMTabManager.nmmCombat, "skySword").setMaxDamage(100);
-    	fireSword = new FireSword(elemental).setup("fireSword", NMMTabManager.nmmCombat, "fireSword").setMaxDamage(100);
-    	darknessSword = new DarknessSword(elemental).setup("darknessSword", NMMTabManager.nmmCombat, "darknessSword").setMaxDamage(100);
-    	fireBow = new FireBow().setup("fireBow", NMMTabManager.nmmCombat, "fireBow");
-    	fireArrow = new FireArrow().setup("fireArrow", NMMTabManager.nmmCombat, "fireArrow");
-    	superItem = new SuperItem().setup("superItem", NMMTabManager.nmmTools, "superItem");
-    	highLighter = new HighLighter().setup("highLighter", NMMTabManager.nmmTools, "highLighter");
+		lightningSword = new LightningSword(elemental, "lightningSword", NMMTabManager.nmmCombat, "lightningSword");
+    	poisonSword = new PoisonSword(elemental, "poisonSword", NMMTabManager.nmmCombat, "poisonSword");
+    	skySword = new SkySword(elemental, "skySword", NMMTabManager.nmmCombat, "skySword");
+    	fireSword = new FireSword(elemental, "fireSword", NMMTabManager.nmmCombat, "fireSword");
+    	darknessDust = new BaseItem("darknessDust", NMMTabManager.nmmRaw, "darknessDust");
+    	darknessSword = new DarknessSword(elemental, "darknessSword", NMMTabManager.nmmCombat, "darknessSword");
+    	fireBow = new FireBow("fireBow", NMMTabManager.nmmCombat, "fireBow");
+    	fireArrow = new BaseItem("fireArrow", NMMTabManager.nmmCombat, "fireArrow");
+    	superItem = new SuperItem("superItem", NMMTabManager.nmmTools, "superItem").setMaxStackSize(1);
+    	highLighter = new HighLighter("highLighter", NMMTabManager.nmmTools, "highLighter");
 	}
 
 	@Override public void register() {
@@ -46,6 +51,7 @@ public class ElementalManager extends BaseManager{
     	regItem(poisonSword);
     	regItem(skySword);
     	regItem(fireSword);
+    	regItem(darknessDust);
     	regItem(darknessSword);
     	regItem(fireBow);
     	regItem(fireArrow);

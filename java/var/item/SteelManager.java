@@ -20,30 +20,30 @@ public SteelManager(){init();register();}
 	
 	public static ToolMaterial steel = EnumHelper.addToolMaterial("Steel", 3, 2500, 6.0F, 4.0F, 14);
 	public static ArmorMaterial steelArmor = EnumHelper.addArmorMaterial("STEEL", "Steel", 25, new int[]{4, 6, 4, 3}, 9);	
-	public static Item steelIngot;
-	public static Item steelSword;
-	public static Item steelHoe;
-	public static Item steelShovel;
-	public static Item steelPickaxe;
-	public static Item steelAxe;
-	public static Item steelHelmet;
-	public static Item steelChestplate;
-	public static Item steelLeggings;
-	public static Item steelBoots;
+	public static BaseItem steelIngot;
+	public static BaseItem steelSword;
+	public static BaseItem steelHoe;
+	public static BaseItem steelShovel;
+	public static BaseItem steelPickaxe;
+	public static BaseItem steelAxe;
+	public static BaseArmor steelHelmet;
+	public static BaseArmor steelChestplate;
+	public static BaseArmor steelLeggings;
+	public static BaseArmor steelBoots;
 	
 	
 	@Override
 	public void init() {
-		steelIngot = new BaseItem().setup("steelIngot", NMMTabManager.nmmRaw, "steelIngot");
-		steelSword = new BaseSword(steel).setup("steelSword", NMMTabManager.nmmCombat, "steelSword");
-		steelHoe = new BaseHoe(steel).setup("steelHoe", NMMTabManager.nmmTools, "steelHoe");
-		steelShovel = new BaseSpade(steel).setup("steelShovel", NMMTabManager.nmmTools, "steelShovel");
-		steelPickaxe = new BasePickaxe(steel).setup("steelPickaxe", NMMTabManager.nmmTools, "steelPickaxe");
-		steelAxe = new BaseAxe(steel).setup("steelAxe", NMMTabManager.nmmTools, "steelAxe");
-		steelHelmet = new BaseArmor(steelArmor, 0, 0).setup("SteelHelmet", NMMTabManager.nmmCombat, "steelHelmet");
-		steelChestplate = new BaseArmor(steelArmor, 0, 1).setup("SteelChestplate", NMMTabManager.nmmCombat, "steelChestplate");
-		steelLeggings = new BaseArmor(steelArmor, 0, 2).setup("SteelLeggings", NMMTabManager.nmmCombat, "steelLeggings");
-		steelBoots = new BaseArmor(steelArmor, 0, 3).setup("SteelBoots", NMMTabManager.nmmCombat, "steelBoots");
+		steelIngot = new BaseItem("steelIngot", NMMTabManager.nmmRaw, "steelIngot");
+		steelSword = new BaseSword(steel, "steelSword", NMMTabManager.nmmCombat, "steelSword");
+		steelHoe = new BaseHoe(steel, "steelHoe", NMMTabManager.nmmTools, "steelHoe");
+		steelShovel = new BaseSpade(steel, "steelShovel", NMMTabManager.nmmTools, "steelShovel");
+		steelPickaxe = new BasePickaxe(steel, "steelPickaxe", NMMTabManager.nmmTools, "steelPickaxe");
+		steelAxe = new BaseAxe(steel, "steelAxe", NMMTabManager.nmmTools, "steelAxe");
+		steelHelmet = new BaseArmor(steelArmor, 0, "steelHelmet", NMMTabManager.nmmCombat, "steelHelmet");
+		steelChestplate = new BaseArmor(steelArmor, 1, "steelChestplate", NMMTabManager.nmmCombat, "steelChestplate");
+		steelLeggings = new BaseArmor(steelArmor, 2, "steelLeggings", NMMTabManager.nmmCombat, "steelLeggings");
+		steelBoots = new BaseArmor(steelArmor, 3, "steelBoots", NMMTabManager.nmmCombat, "steelBoots");
 	}
 	
 	@Override

@@ -20,30 +20,30 @@ public PlatinumManager(){init();register();}
 	
 	public static ToolMaterial platinum = EnumHelper.addToolMaterial("Platinum", 3, 5000, 6.0F, 2.0F, 25);
 	public static ArmorMaterial platinumArmor = EnumHelper.addArmorMaterial("PLATINUM", "Platinum", 50, new int[]{4, 9, 5, 3}, 9);
-	public static Item platinumIngot;
-	public static Item platinumSword;
-	public static Item platinumHoe;
-	public static Item platinumShovel;
-	public static Item platinumPickaxe;
-	public static Item platinumAxe;
-	public static Item platinumHelmet;
-	public static Item platinumChestplate;
-	public static Item platinumLeggings;
-	public static Item platinumBoots;
+	public static BaseItem platinumIngot;
+	public static BaseItem platinumSword;
+	public static BaseItem platinumHoe;
+	public static BaseItem platinumShovel;
+	public static BaseItem platinumPickaxe;
+	public static BaseItem platinumAxe;
+	public static BaseArmor platinumHelmet;
+	public static BaseArmor platinumChestplate;
+	public static BaseArmor platinumLeggings;
+	public static BaseArmor platinumBoots;
 	
 	
 	@Override
 	public void init() {
-		platinumIngot = new BaseItem().setup("platinumIngot", NMMTabManager.nmmRaw, "platinumIngot");
-		platinumSword = new BaseSword(platinum).setup("platinumSword", NMMTabManager.nmmCombat, "platinumSword");
-		platinumHoe = new BaseHoe(platinum).setup("platinumHoe", NMMTabManager.nmmTools, "platinumHoe");
-		platinumShovel = new BaseSpade(platinum).setup("platinumShovel", NMMTabManager.nmmTools, "platinumShovel");
-		platinumPickaxe = new BasePickaxe(platinum).setup("platinumPickaxe", NMMTabManager.nmmTools, "platinumPickaxe");
-		platinumAxe = new BaseAxe(platinum).setup("platinumAxe", NMMTabManager.nmmTools, "platinumAxe");
-		platinumHelmet = new BaseArmor(platinumArmor, 0, 0).setup("PlatinumHelmet", NMMTabManager.nmmCombat, "platinumHelmet");
-		platinumChestplate = new BaseArmor(platinumArmor, 0, 1).setup("PlatinumChestplate", NMMTabManager.nmmCombat, "platinumChestplate");
-		platinumLeggings = new BaseArmor(platinumArmor, 0, 2).setup("PlatinumLeggings", NMMTabManager.nmmCombat, "platinumLeggings");
-		platinumBoots = new BaseArmor(platinumArmor, 0, 3).setup("PlatinumBoots", NMMTabManager.nmmCombat, "platinumBoots");
+		platinumIngot = new BaseItem("platinumIngot", NMMTabManager.nmmRaw, "platinumIngot");
+		platinumSword = new BaseSword(platinum, "platinumSword", NMMTabManager.nmmCombat, "platinumSword");
+		platinumHoe = new BaseHoe(platinum, "platinumHoe", NMMTabManager.nmmTools, "platinumHoe");
+		platinumShovel = new BaseSpade(platinum, "platinumShovel", NMMTabManager.nmmTools, "platinumShovel");
+		platinumPickaxe = new BasePickaxe(platinum, "platinumPickaxe", NMMTabManager.nmmTools, "platinumPickaxe");
+		platinumAxe = new BaseAxe(platinum, "platinumAxe", NMMTabManager.nmmTools, "platinumAxe");
+		platinumHelmet = new BaseArmor(platinumArmor, 0, "platinumHelmet", NMMTabManager.nmmCombat, "platinumHelmet");
+		platinumChestplate = new BaseArmor(platinumArmor, 1, "platinumChestplate", NMMTabManager.nmmCombat, "platinumChestplate");
+		platinumLeggings = new BaseArmor(platinumArmor, 2, "platinumLeggings", NMMTabManager.nmmCombat, "platinumLeggings");
+		platinumBoots = new BaseArmor(platinumArmor, 3, "platinumBoots", NMMTabManager.nmmCombat, "platinumBoots");
 	}
 	
 	@Override
