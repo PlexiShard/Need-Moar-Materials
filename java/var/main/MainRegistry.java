@@ -1,5 +1,6 @@
 package var.main;
 
+import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.WorldProvider;
 import net.minecraft.world.biome.BiomeGenBase;
@@ -8,6 +9,8 @@ import net.minecraftforge.common.BiomeManager;
 import net.minecraftforge.common.BiomeManager.BiomeEntry;
 import net.minecraftforge.common.BiomeManager.BiomeType;
 import net.minecraftforge.common.DimensionManager;
+import net.minecraftforge.common.config.Configuration;
+import net.minecraftforge.fml.client.GuiModList;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -19,22 +22,28 @@ import net.minecraftforge.fml.relauncher.Side;
 import var.dimension.sky.SkyBiome;
 import var.world.Generate;
 
-@Mod(modid = MainRegistry.MODID, name = MainRegistry.NAME, version = MainRegistry.VERSION)
+@Mod(modid = MainRegistry.MODID, name = MainRegistry.NAME, version = MainRegistry.VERSION, guiFactory="var.main.ConfigGUI")
 public class MainRegistry 
 {	public final static String MODID = "nmm";
 	public final static String NAME = "Need Moar Materials";
-	public final static String VERSION = "Beta 1.0";
+	public final static String VERSION = "Beta 1.1";
+	public static Configuration configFile;
 	public static BiomeGenBase skyBiome = new SkyBiome(SkyBiome.getEmptyBiomeID(), true).setBiomeName("skyBiome").setHeight(new Height(1.5f, 0.05f));  
 
 	/**Events which should occur when a server starts with this mod enabled*/
 	@EventHandler
 	public void serverStart(FMLServerStartedEvent event)
 	{}
-
+	
 	/**Events which should be run when this mod is first loaded (mostly for creating new values and objects)*/
 	@EventHandler
 	public void PreLoad(FMLPreInitializationEvent PreEvent) 
-	{	new PreInit();
+	{	this.configFile = new Configuration(PreEvent.getSuggestedConfigurationFile());
+		Config.update();
+		LogHelper.logInfo("Registered Configuration File");
+		
+		new PreInit();
+		
 		GameRegistry.registerWorldGenerator(new Generate(), 1);
 		LogHelper.logInfo("Registered world generators");
 	}
