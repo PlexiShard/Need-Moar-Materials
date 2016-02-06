@@ -7,6 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.world.World;
+import var.base.BaseCreativeTab;
 import var.base.BaseItem;
 import var.block.BlockManager;
 
@@ -17,7 +18,14 @@ public class HighLighter extends BaseItem {
         this.setMaxDamage(64);
     }
 
-    public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
+    public HighLighter(String uname, BaseCreativeTab tab, String texture) {
+		this.maxStackSize = 1;
+		this.setMaxStackSize(maxStackSize);
+		this.setMaxDamage(64);
+		this.setupThis(uname, tab, texture);
+	}
+
+	public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
     {
         pos = pos.offset(side);
 

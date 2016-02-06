@@ -52,9 +52,12 @@ public class SkyTeleporter extends Teleporter {
         }
         else
         {
-            int i = MathHelper.floor_double(entityIn.posX);
+            /*int i = MathHelper.floor_double(entityIn.posX);
             int j = MathHelper.floor_double(entityIn.posY) - 1;
-            int k = MathHelper.floor_double(entityIn.posZ);
+            int k = MathHelper.floor_double(entityIn.posZ);*/
+        	int i = MathHelper.floor_double(0);
+        	int j = this.worldServerInstance.getTopSolidOrLiquidBlock(new BlockPos(0,0,0)).getY();
+        	int k = MathHelper.floor_double(0);
             byte b0 = 1;
             byte b1 = 0;
 
@@ -82,8 +85,12 @@ public class SkyTeleporter extends Teleporter {
     {
         boolean flag = true;
         double d0 = -1.0D;
-        int i = MathHelper.floor_double(entityIn.posX);
-        int j = MathHelper.floor_double(entityIn.posZ);
+        /*int i = MathHelper.floor_double(entityIn.posX);
+        int j = MathHelper.floor_double(entityIn.posZ);*/
+        
+        int i = MathHelper.floor_double(0);
+        int j = MathHelper.floor_double(0);
+        
         boolean flag1 = true;
         Object object = BlockPos.ORIGIN;
         long k = ChunkCoordIntPair.chunkXZ2Int(i, j);
@@ -98,7 +105,7 @@ public class SkyTeleporter extends Teleporter {
         }
         else
         {
-            BlockPos blockpos4 = new BlockPos(entityIn);
+            BlockPos blockpos4 = new BlockPos(0,entityIn.posY,0);
 
             for (int l = -128; l <= 128; ++l)
             {
@@ -258,9 +265,12 @@ public class SkyTeleporter extends Teleporter {
     {
         byte b0 = 16;
         double d0 = -1.0D;
-        int i = MathHelper.floor_double(p_85188_1_.posX);
+        /*int i = MathHelper.floor_double(p_85188_1_.posX);
         int j = MathHelper.floor_double(p_85188_1_.posY);
-        int k = MathHelper.floor_double(p_85188_1_.posZ);
+        int k = MathHelper.floor_double(p_85188_1_.posZ);*/
+        int i = MathHelper.floor_double(0);
+    	int j = this.worldServerInstance.getTopSolidOrLiquidBlock(new BlockPos(0,0,0)).getY();
+    	int k = MathHelper.floor_double(0);
         int l = i;
         int i1 = j;
         int j1 = k;
@@ -284,11 +294,13 @@ public class SkyTeleporter extends Teleporter {
 
         for (i2 = i - b0; i2 <= i + b0; ++i2)
         {
-            d1 = (double)i2 + 0.5D - p_85188_1_.posX;
-
+            //d1 = (double)i2 + 0.5D - p_85188_1_.posX;
+        	d1 = (double)i2 + 0.5D - 0;
+        	
             for (k2 = k - b0; k2 <= k + b0; ++k2)
             {
-                d2 = (double)k2 + 0.5D - p_85188_1_.posZ;
+                //d2 = (double)k2 + 0.5D - p_85188_1_.posZ;
+            	d2 = (double)k2 + 0.5D - 0;
                 label271:
 
                 for (i3 = this.worldServerInstance.getActualHeight() - 1; i3 >= 0; --i3)
@@ -350,11 +362,13 @@ public class SkyTeleporter extends Teleporter {
         {
             for (i2 = i - b0; i2 <= i + b0; ++i2)
             {
-                d1 = (double)i2 + 0.5D - p_85188_1_.posX;
+                //d1 = (double)i2 + 0.5D - p_85188_1_.posX;
+            	d1 = (double)i2 + 0.5D - 0;
 
                 for (k2 = k - b0; k2 <= k + b0; ++k2)
                 {
-                    d2 = (double)k2 + 0.5D - p_85188_1_.posZ;
+                    //d2 = (double)k2 + 0.5D - p_85188_1_.posZ;
+                	d2 = (double)k2 + 0.5D - 0;
                     label219:
 
                     for (i3 = this.worldServerInstance.getActualHeight() - 1; i3 >= 0; --i3)

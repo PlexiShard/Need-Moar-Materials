@@ -19,30 +19,31 @@ public class BrassManager extends BaseManager{
 	
 	public static ToolMaterial brass = EnumHelper.addToolMaterial("Brass", 2, 300, 7.5F, 8.5F, 14); 
 	public static ArmorMaterial brassArmor = EnumHelper.addArmorMaterial("BRASS", "Brass", 10, new int[]{3, 7, 5, 3}, 10);
-	public static Item brassIngot;
-	public static Item brassSword;
-	public static Item brassHoe;
-	public static Item brassShovel;
-	public static Item brassPickaxe;
-	public static Item brassAxe;
-	public static Item brassHelmet;
-	public static Item brassChestplate;
-	public static Item brassLeggings;
-	public static Item brassBoots;
-	
+	public static BaseItem brassIngot;
+	public static BaseItem brassSword;
+	public static BaseItem brassHoe;
+	public static BaseItem brassShovel;
+	public static BaseItem brassPickaxe;
+	public static BaseItem brassAxe;
+	public static BaseArmor brassHelmet;
+	public static BaseArmor brassChestplate;
+	public static BaseArmor brassLeggings;
+	public static BaseArmor brassBoots;
+	public static BaseItem copperIngot;
 	
 	@Override
 	public void init() {
-		brassIngot = new BaseItem().setup("brassIngot", NMMTabManager.nmmRaw, "brassIngot");
-		brassSword = new BaseSword(brass).setup("brassSword", NMMTabManager.nmmCombat, "brassSword");
-		brassHoe = new BaseHoe(brass).setup("brassHoe", NMMTabManager.nmmTools, "brassHoe");
-		brassShovel = new BaseSpade(brass).setup("brassShovel", NMMTabManager.nmmTools, "brassShovel");
-		brassPickaxe = new BasePickaxe(brass).setup("brassPickaxe", NMMTabManager.nmmTools, "brassPickaxe");
-		brassAxe = new BaseAxe(brass).setup("brassAxe", NMMTabManager.nmmTools, "brassAxe");
-		brassHelmet = new BaseArmor(brassArmor, 0, 0).setup("BrassHelmet", NMMTabManager.nmmCombat, "brassHelmet");
-		brassChestplate = new BaseArmor(brassArmor, 0, 1).setup("BrassChestplate", NMMTabManager.nmmCombat, "brassChestplate");
-		brassLeggings = new BaseArmor(brassArmor, 0, 2).setup("BrassLeggings", NMMTabManager.nmmCombat, "brassLeggings");
-		brassBoots = new BaseArmor(brassArmor, 0, 3).setup("BrassBoots", NMMTabManager.nmmCombat, "brassBoots");
+		brassIngot = new BaseItem("brassIngot", NMMTabManager.nmmRaw, "brassIngot");
+		brassSword = new BaseSword(brass, "brassSword", NMMTabManager.nmmCombat, "brassSword");
+		brassHoe = new BaseHoe(brass, "brassHoe", NMMTabManager.nmmTools, "brassHoe");
+		brassShovel = new BaseSpade(brass, "brassShovel", NMMTabManager.nmmTools, "brassShovel");
+		brassPickaxe = new BasePickaxe(brass, "brassPickaxe", NMMTabManager.nmmTools, "brassPickaxe");
+		brassAxe = new BaseAxe(brass, "brassAxe", NMMTabManager.nmmTools, "brassAxe");
+		brassHelmet = new BaseArmor(brassArmor, 0, "brassHelmet", NMMTabManager.nmmCombat, "brassHelmet");
+		brassChestplate = new BaseArmor(brassArmor, 1, "brassChestplate", NMMTabManager.nmmCombat, "brassChestplate");
+		brassLeggings = new BaseArmor(brassArmor, 2, "brassLeggings", NMMTabManager.nmmCombat, "brassLeggings");
+		brassBoots = new BaseArmor(brassArmor, 3, "brassBoots", NMMTabManager.nmmCombat, "brassBoots");
+		copperIngot = new BaseItem("copperIngot", NMMTabManager.nmmRaw, "copperIngot");
 	}
 	
 	@Override
@@ -57,5 +58,6 @@ public class BrassManager extends BaseManager{
 		regItem(brassChestplate);
 		regItem(brassLeggings);
 		regItem(brassBoots);
+		regItem(copperIngot);
 	}
 }

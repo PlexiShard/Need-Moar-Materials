@@ -2,6 +2,7 @@ package var.item.elemental;
 
 import java.util.Random;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.BlockPos;
@@ -12,11 +13,9 @@ import var.block.BlockManager;
 
 public class SuperItem extends BaseItem {
 
-	public SuperItem() {
-		// TODO Auto-generated constructor stub
-	}
+	public SuperItem(String uname, CreativeTabs tab, String texture)
+	{	setupThis(uname, tab, texture);}
 
-	
 	@Override
 	public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World world, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ) {
 		Random rand = new Random();

@@ -1,5 +1,6 @@
 package var.item.elemental;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.effect.EntityLightningBolt;
@@ -12,6 +13,11 @@ public class LightningSword extends BaseSword {
 	public LightningSword(ToolMaterial p_i45356_1_) {
 		super(p_i45356_1_);
 		this.setMaxStackSize(1);
+	}
+	
+	public LightningSword(ToolMaterial p_i45356_1_, String uname,CreativeTabs tab,String texture)
+	{	super(p_i45356_1_);
+		this.setupThis(uname, tab, texture);
 	}
 
 	@Override

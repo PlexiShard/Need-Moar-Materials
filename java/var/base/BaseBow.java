@@ -14,6 +14,7 @@ import net.minecraft.world.World;
 
 public class BaseBow extends BaseItem{
 
+	/**A set of textures to be used while the Bow is being pulled back*/
 	public static final String[] bowPullIconNameArray = new String[] {"pulling_0", "pulling_1", "pulling_2"};
     private static final String __OBFID = "CL_00001777";
 
@@ -25,7 +26,9 @@ public class BaseBow extends BaseItem{
 
     /**
      * Called when the player stops using an Item (stops holding the right mouse button).
-     *  
+     * @param stack The {@link ItemStack} of the equipped bow
+     * @param worldIn The {@link World} the bow exists in
+     * @param playerIn The {@link EntityPlayer} using the bow
      * @param timeLeft The amount of ticks left before the using would have been complete
      */
     public void onPlayerStoppedUsing(ItemStack stack, World worldIn, EntityPlayer playerIn, int timeLeft)
@@ -102,6 +105,12 @@ public class BaseBow extends BaseItem{
     /**
      * Called when the player finishes using this Item (E.g. finishes eating.). Not called when the player stops using
      * the Item before the action is complete.
+     * 
+     * @param stack The bow's {@link ItemStack}
+     * @param worldIn The {@link World} the bow is in
+     * @param playerIn The {@link EntityPlayer} using the bow
+     * 
+     * @return An {@link ItemStack} to replace the bow's after using it
      */
     public ItemStack onItemUseFinish(ItemStack stack, World worldIn, EntityPlayer playerIn)
     {
@@ -110,6 +119,9 @@ public class BaseBow extends BaseItem{
 
     /**
      * How long it takes to use or consume an item
+     * 
+     * @param stack The bow's {@link ItemStack}
+     * @return An int number of ticks needed to pull the Bow back fully
      */
     public int getMaxItemUseDuration(ItemStack stack)
     {
@@ -118,6 +130,9 @@ public class BaseBow extends BaseItem{
 
     /**
      * returns the action that specifies what animation to play when the items is being used
+     * 
+     * @param stack The bow's {@link ItemStack}
+     * @return An EnumAction
      */
     public EnumAction getItemUseAction(ItemStack stack)
     {
@@ -126,6 +141,10 @@ public class BaseBow extends BaseItem{
 
     /**
      * Called whenever this item is equipped and the right mouse button is pressed. Args: itemStack, world, entityPlayer
+     *
+     * @param itemStackIn The equipped {@link ItemStack}
+     * @param worldIn The {@link World} the {@link ItemStack} exists in
+     * @param playerIn The {@link EntityPlayer) using the {@link Item}
      */
     public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
     {

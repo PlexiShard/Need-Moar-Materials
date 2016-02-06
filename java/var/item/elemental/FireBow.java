@@ -10,12 +10,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
 import var.base.BaseBow;
+import var.base.BaseCreativeTab;
 import var.item.ElementalManager;
 
 public class FireBow extends BaseBow {
-	
-	public FireBow() {
-		this.maxStackSize = 1;
+
+	public FireBow(String uname, BaseCreativeTab tab, String texture) {
+		this.setupThis(uname, tab, texture);
 	}
 
 	public void onPlayerStoppedUsing(ItemStack bow, World world, EntityPlayer player, int p_77615_4_)
