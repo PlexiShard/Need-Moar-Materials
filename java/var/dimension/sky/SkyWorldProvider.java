@@ -37,4 +37,22 @@ public class SkyWorldProvider extends WorldProvider
     public int getRespawnDimension(EntityPlayerMP player) {
         return 0;
     }
+	
+	public boolean canRespawnHere()
+	{	return true;}
+	
+	public static WorldProvider getProviderForDimension(int dimension)
+    {	return net.minecraftforge.common.DimensionManager.createProviderFor(dimension);}
+	
+	@SideOnly(Side.CLIENT)
+    public float getCloudHeight()
+    {	return 32.0F;}
+	
+    
+    
+    public boolean isSurfaceWorld()
+    {	return false;}
+
+    protected void registerWorldChunkManager()
+    {	this.worldChunkMgr = worldObj.getWorldInfo().getTerrainType().getChunkManager(worldObj);}
 }

@@ -3,6 +3,7 @@ package var.dimension.sky;
 import java.util.Random;
 
 import var.block.BlockManager;
+import var.main.Config;
 import var.main.MainRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPortal;
@@ -51,7 +52,7 @@ public class SkyPortal extends BlockPortal {
 				}
 				else if (player.dimension != 2) {
 					player.timeUntilPortal = 400;
-					SkyTeleporter skyTeleporter = new SkyTeleporter(mcServer.worldServerForDimension(2));
+					SkyTeleporter skyTeleporter = new SkyTeleporter(mcServer.worldServerForDimension(Config.iSkyDimensionID));
 					player.mcServer.getConfigurationManager().transferPlayerToDimension(player, 2, (Teleporter) skyTeleporter);
 				}
 				else {

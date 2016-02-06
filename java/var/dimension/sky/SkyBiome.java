@@ -64,63 +64,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class SkyBiome extends BiomeGenBase {
 
 	private static final Logger logger = LogManager.getLogger();
-    protected static final BiomeGenBase.Height height_Default = new BiomeGenBase.Height(0.1F, 0.2F);
-    protected static final BiomeGenBase.Height height_ShallowWaters = new BiomeGenBase.Height(-0.5F, 0.0F);
-    protected static final BiomeGenBase.Height height_Oceans = new BiomeGenBase.Height(-1.0F, 0.1F);
-    protected static final BiomeGenBase.Height height_DeepOceans = new BiomeGenBase.Height(-1.8F, 0.1F);
-    protected static final BiomeGenBase.Height height_LowPlains = new BiomeGenBase.Height(0.125F, 0.05F);
-    protected static final BiomeGenBase.Height height_MidPlains = new BiomeGenBase.Height(0.2F, 0.2F);
-    protected static final BiomeGenBase.Height height_LowHills = new BiomeGenBase.Height(0.45F, 0.3F);
-    protected static final BiomeGenBase.Height height_HighPlateaus = new BiomeGenBase.Height(1.5F, 0.025F);
-    protected static final BiomeGenBase.Height height_MidHills = new BiomeGenBase.Height(1.0F, 0.5F);
-    protected static final BiomeGenBase.Height height_Shores = new BiomeGenBase.Height(0.0F, 0.025F);
-    protected static final BiomeGenBase.Height height_RockyWaters = new BiomeGenBase.Height(0.1F, 0.8F);
-    protected static final BiomeGenBase.Height height_LowIslands = new BiomeGenBase.Height(0.2F, 0.3F);
-    protected static final BiomeGenBase.Height height_PartiallySubmerged = new BiomeGenBase.Height(-0.2F, 0.1F);
-    /** An array of all the biomes, indexed by biome id. */
     private static final BiomeGenBase[] biomeList = new BiomeGenBase[256];
-    public static final Set explorationBiomesList = Sets.newHashSet();
-    public static final Map BIOME_ID_MAP = Maps.newHashMap();
 
     public String biomeName;
-    public int color;
-    public int field_150609_ah;
-    /** The block expected to be on the top of this biome */
-    public IBlockState topBlock;
-    /** The block to fill spots in when not on the top */
-    public IBlockState fillerBlock;
-    public int fillerBlockMetadata;
-    /** The minimum height of this biome. Default 0.1. */
-    public float minHeight;
-    /** The maximum height of this biome. Default 0.3. */
-    public float maxHeight;
-    /** The temperature of this biome. */
-    public float temperature;
-    /** The rainfall in this biome. */
-    public float rainfall;
-    /** Color tint applied to water depending on biome */
-    public int waterColorMultiplier;
-    /** The biome decorator. */
-    public BiomeDecorator theBiomeDecorator;
-    /** Holds the classes of IMobs (hostile mobs) that can be spawned in the biome. */
-    protected List spawnableMonsterList;
-    /** Holds the classes of any creature that can be spawned in the biome as friendly creature. */
-    protected List spawnableCreatureList;
-    /** Holds the classes of any aquatic creature that can be spawned in the water of the biome. */
-    protected List spawnableWaterCreatureList;
-    protected List spawnableCaveCreatureList;
-    /** Set to true if snow is enabled for this biome. */
-    protected boolean enableSnow;
+
     /** Is true (default) if the biome support rain (desert and nether can't have rain) */
     protected boolean enableRain;
     /** The id number to this biome, and its index in the biomeList array. */
     public final int biomeID;
-    /** The tree generator. */
-    protected WorldGenTrees worldGeneratorTrees;
-    /** The big tree generator. */
-    protected WorldGenBigTree worldGeneratorBigTree;
-    /** The swamp tree generator. */
-    protected WorldGenSwamp worldGeneratorSwamp;
 	
 	private static final String __OBFID = "CL_00000187";
 

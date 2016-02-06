@@ -20,6 +20,8 @@ import net.minecraftforge.fml.common.event.FMLServerStartedEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import var.dimension.sky.SkyBiome;
+import var.dimension.sky.SkyTeleporter;
+import var.dimension.sky.SkyWorldProvider;
 import var.world.Generate;
 
 @Mod(modid = MainRegistry.MODID, name = MainRegistry.NAME, version = MainRegistry.VERSION, guiFactory="var.main.ConfigGUI")
@@ -29,11 +31,15 @@ public class MainRegistry
 	public final static String VERSION = "Beta 1.1";
 	public static Configuration configFile;
 	public static BiomeGenBase skyBiome = new SkyBiome(SkyBiome.getEmptyBiomeID(), true).setBiomeName("skyBiome").setHeight(new Height(1.5f, 0.05f));  
-
+	public SkyTeleporter teleporterSurface;
+	public SkyTeleporter teleporterSky;
+	
 	/**Events which should occur when a server starts with this mod enabled*/
 	@EventHandler
 	public void serverStart(FMLServerStartedEvent event)
-	{}
+	{	this.teleporterSurface = new SkyTeleporter(MinecraftServer.getServer().worldServerForDimension(0));
+    	this.teleporterSky = new SkyTeleporter(MinecraftServer.getServer().worldServerForDimension(Config.iSkyDimensionID));
+	}
 	
 	/**Events which should be run when this mod is first loaded (mostly for creating new values and objects)*/
 	@EventHandler
@@ -57,6 +63,12 @@ public class MainRegistry
 			LogHelper.logInfo("Setting Textures");
 		}	
 	
+		if(Config.bSkyDimension){
+			BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(skyBiome, 0));
+	
+			DimensionManager.registerProviderType(Config.iSkyDimensionID, SkyWorldProvider.class, true);
+			DimensionManager.registerDimension(Config.iSkyDimensionID, Config.iSkyDimensionID);
+		}
 		LogHelper.logInfo("Init phase complete. Begining PostInit...");
 	}
 	
