@@ -22,8 +22,8 @@ public class ConfigFactory extends GuiConfig {
 	}
 	
 	public static ConfigElement generateOres = new ConfigElement(Config.configFile.get("coreFeatures", "generateOres", true));
-	public static ConfigElement craftingRecipies = new ConfigElement(Config.configFile.get("craftingRecipies", "coreFeatures", true));
-	public static ConfigElement skyDimension = new ConfigElement(Config.configFile.get("skyDimension", "coreFeatures", true));
+	public static ConfigElement craftingRecipies = new ConfigElement(Config.configFile.get("coreFeatures", "craftingRecipies", true));
+	public static ConfigElement skyDimension = new ConfigElement(Config.configFile.get("coreFeatures", "skyDimension", true));
 	public static ConfigElement skyDimensionID = new ConfigElement(Config.configFile.get("coreFeatures", "skyDimensionID", 2, "The ID which the Sky Dimension will be registered under (modify if another dimension already holds the default value)", 2, 102).setConfigEntryClass(NumberSliderEntry.class));
 	public static ConfigElement skyDimensionCloudSize = new ConfigElement(Config.configFile.get("coreFeatures", "skyDimensionCloudSize", 100, "The Maximum size of any individual ore cloud", 10, 250).setConfigEntryClass(NumberSliderEntry.class));
 	public static ConfigElement skyDimensionCloudNumber = new ConfigElement(Config.configFile.get("coreFeatures", "skyDimensionCloudNumber", 1, "How often ore clouds spawn (Reduce Ore Cloud Size before increasing spawnrate)", 1, 10).setConfigEntryClass(NumberSliderEntry.class));
