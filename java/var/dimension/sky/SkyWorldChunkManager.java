@@ -39,4 +39,3 @@ public class SkyWorldChunkManager extends WorldChunkManager {
         return abiomegenbase;
     }
 }
-

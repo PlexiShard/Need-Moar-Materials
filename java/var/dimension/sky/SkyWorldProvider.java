@@ -30,9 +30,6 @@ public class SkyWorldProvider extends WorldProvider
 	@Override
     public String getInternalNameSuffix()
     {	return "_sky";	}
-
-	public IChunkProvider func_76555_c() 
-	{	return new SkyChunkProvider(this.worldObj, 2);	}
 	
     public int getRespawnDimension(EntityPlayerMP player) {
         return 0;

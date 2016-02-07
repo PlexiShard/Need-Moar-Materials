@@ -75,7 +75,7 @@ public class MainRegistry
 		if(Config.bSkyDimension){
 			BiomeManager.addBiome(BiomeType.WARM, new BiomeEntry(skyBiome, 0));
 	
-			DimensionManager.registerProviderType(Config.iSkyDimensionID, SkyWorldProvider.class, true);
+			DimensionManager.registerProviderType(Config.iSkyDimensionID, SkyWorldProvider.class, false);
 			DimensionManager.registerDimension(Config.iSkyDimensionID, Config.iSkyDimensionID);
 		}
 		

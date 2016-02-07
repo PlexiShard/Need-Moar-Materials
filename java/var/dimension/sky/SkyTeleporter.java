@@ -263,6 +263,8 @@ public class SkyTeleporter extends Teleporter {
 
     public boolean makePortal(Entity p_85188_1_)
     {
+    	this.worldServerInstance.setBlockState(new BlockPos(0,90,0), BlockManager.superBlock.getDefaultState());
+    	
         byte b0 = 16;
         double d0 = -1.0D;
         /*int i = MathHelper.floor_double(p_85188_1_.posX);

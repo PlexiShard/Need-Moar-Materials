@@ -69,7 +69,6 @@ public class Generate implements IWorldGenerator {
 			new WorldGenMinable(block.getDefaultState(), maxVeinSize).generate(world, random, new BlockPos(posX, posY, posZ));
 		}
 		
-		world.setBlockState(new BlockPos(0,90,0), BlockManager.superBlock.getDefaultState());
 	}
 
 }
