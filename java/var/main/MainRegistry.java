@@ -45,7 +45,9 @@ public class MainRegistry
 	@EventHandler
 	public void PreLoad(FMLPreInitializationEvent PreEvent) 
 	{	this.configFile = new Configuration(PreEvent.getSuggestedConfigurationFile());
-		Config.update();
+
+		new Config();
+	
 		LogHelper.logInfo("Registered Configuration File");
 		
 		new PreInit();
@@ -57,10 +59,17 @@ public class MainRegistry
 	/**Events which should be run when this mod reaches the Init state (mostly for adding textures and models)*/
 	@EventHandler
 	public void Load(FMLInitializationEvent event) 
-	{	if (event.getSide() == Side.CLIENT)
+	{	Config.update();
+		
+		if (event.getSide() == Side.CLIENT)
 		{	ClientProxy proxy = new ClientProxy();
 			proxy.addTextures();
 			LogHelper.logInfo("Setting Textures");
+			
+			
+			LogHelper.logInfo("Updated settings");
+			
+			
 		}	
 	
 		if(Config.bSkyDimension){
@@ -69,6 +78,7 @@ public class MainRegistry
 			DimensionManager.registerProviderType(Config.iSkyDimensionID, SkyWorldProvider.class, true);
 			DimensionManager.registerDimension(Config.iSkyDimensionID, Config.iSkyDimensionID);
 		}
+		
 		LogHelper.logInfo("Init phase complete. Begining PostInit...");
 	}
 	

@@ -33,7 +33,7 @@ public class ConfigGUI implements IModGuiFactory {
 	
 	@Override
 	public Class<? extends GuiScreen> mainConfigGuiClass() {
-		return Config.class;
+		return ConfigFactory.class;
 	}
 
 	@Override
