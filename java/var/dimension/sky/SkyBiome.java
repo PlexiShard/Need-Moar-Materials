@@ -293,7 +293,8 @@ public class SkyBiome extends BiomeGenBase {
     }
 
     /**
-     * return the biome specified by biomeID, or 0 (ocean) if out of bounds
+     * @param p_150568_0_ The int to find a Biome for
+     * @return biome specified by biomeID, or 0 (ocean) if out of bounds
      */
     public static BiomeGenBase getBiome(int p_150568_0_)
     {

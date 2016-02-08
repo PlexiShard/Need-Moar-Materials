@@ -29,13 +29,17 @@ public class ClientProxy extends var.main.ServerProxy{
 		LogHelper.logInfo("Textures Registered");
 	}
 	
-	/**Adds a texture location to an {@link Item}, based on the value associated with the item in {@link TextureHandler#items}*/
+	/**Adds a texture location to an {@link Item}, based on the value associated with the item in {@link TextureHandler#items}
+	 * 
+	 * @param item The item to be textured. (Pulls data from {@link TextureHandler})*/
 	public void textureItems(Item item) 
 	{	String texture = TextureHandler.itemToTexture.get(item).toString().replaceAll("item.", "");
         itemMesher.register(item, 0, new ModelResourceLocation(MainRegistry.MODID + ":" + texture, "inventory"));
 	}
 	
-	/**Adds a texture location to a {@link Block}, based on the value associated with the item in {@link TextureHandler#blocks}*/
+	/**Adds a texture location to a {@link Block}, based on the value associated with the item in {@link TextureHandler#blocks}
+	 * 
+	 * @param block The block to be textured. (Pulls data from {@link TextureHandler})*/
 	public void textureBlocks(Block block) 
 	{	String texture = TextureHandler.blockToTexture.get(block).toString().replaceAll("tile.", "");
         itemMesher.register(Item.getItemFromBlock(block), 0, new ModelResourceLocation(MainRegistry.MODID + ":" + texture, "inventory"));

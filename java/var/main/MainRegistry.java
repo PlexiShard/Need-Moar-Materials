@@ -34,14 +34,18 @@ public class MainRegistry
 	public SkyTeleporter teleporterSurface;
 	public SkyTeleporter teleporterSky;
 	
-	/**Events which should occur when a server starts with this mod enabled*/
+	/**Events which should occur when a server starts with this mod enabled
+	 * 
+	 * @param event A variable initialized by FML, used as a parameter when calling a mod's server start events. (Unknown usage)*/
 	@EventHandler
 	public void serverStart(FMLServerStartedEvent event)
 	{	this.teleporterSurface = new SkyTeleporter(MinecraftServer.getServer().worldServerForDimension(0));
     	this.teleporterSky = new SkyTeleporter(MinecraftServer.getServer().worldServerForDimension(Config.iSkyDimensionID));
 	}
 	
-	/**Events which should be run when this mod is first loaded (mostly for creating new values and objects)*/
+	/**Events which should be run when this mod is first loaded (mostly for creating new values and objects)
+	 * 
+	 * @param PreEvent A variable initialized by FML, used as a parameter when calling a mod's PreInit. Contains a suggested config file based on the mod's info*/
 	@EventHandler
 	public void PreLoad(FMLPreInitializationEvent PreEvent) 
 	{	this.configFile = new Configuration(PreEvent.getSuggestedConfigurationFile());
@@ -56,20 +60,18 @@ public class MainRegistry
 		LogHelper.logInfo("Registered world generators");
 	}
 	
-	/**Events which should be run when this mod reaches the Init state (mostly for adding textures and models)*/
+	/**Events which should be run when this mod reaches the Init state (mostly for adding textures and models)
+	 * 
+	 * @param event A variable initialized by FML, used as a parameter when calling a mod's Init. (Unknown usage)*/
 	@EventHandler
 	public void Load(FMLInitializationEvent event) 
 	{	Config.update();
+		LogHelper.logInfo("Updated settings");
 		
 		if (event.getSide() == Side.CLIENT)
 		{	ClientProxy proxy = new ClientProxy();
 			proxy.addTextures();
 			LogHelper.logInfo("Setting Textures");
-			
-			
-			LogHelper.logInfo("Updated settings");
-			
-			
 		}	
 	
 		if(Config.bSkyDimension){
@@ -82,7 +84,9 @@ public class MainRegistry
 		LogHelper.logInfo("Init phase complete. Begining PostInit...");
 	}
 	
-	/**Events which should be run when this mod reaches the PostInit state (Unknown usage)*/
+	/**Events which should be run when this mod reaches the PostInit state (Unknown usage)
+	 * 
+	 * @param PostLoad A variable initialized by FML, used as a parameter when calling a mod's PostInit. (Unknown usage)*/
 	@EventHandler
 	public void PostLoad(FMLPostInitializationEvent PostLoad) 
 	{	LogHelper.logInfo("PostInit complete. NMM fully initialized");	}

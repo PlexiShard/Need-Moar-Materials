@@ -293,11 +293,16 @@ public class HighConsintrationFire extends Block {
 	public boolean isCollidable() {
 		return false;
 	}
+	
+	// Use canCatchFire with face sensitive version below
 	/**
 	* Checks if the block can be caught on fire
+	* @deprecated
+	* @param worldIn World the fire exists in
+	* @param pos Position of the block to be burned
+	* @return boolean, true if the block above it can be burned
 	*/
 	@Deprecated
-	// Use canCatchFire with face sensitive version below
 	public boolean canCatchFire(IBlockAccess worldIn, BlockPos pos) {
 		return canCatchFire(worldIn, pos, EnumFacing.UP);
 	}

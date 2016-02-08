@@ -34,7 +34,8 @@ public class BaseCreativeTab extends CreativeTabs {
 		this.tabIconItemStack = new ItemStack(tabIcon, 1);
 	}
 	/**Sets an Item to serve as a {@link CreativeTabs}'s icon.
-	 * <br /><br />
+	 * <br>
+	 * <br>
 	 * Used in {@link var.main.ClientProxy} after Items and their textures are registered, to avoid errors
 	 * 
 	 * @param icon
@@ -45,8 +46,8 @@ public class BaseCreativeTab extends CreativeTabs {
 	}
 	
 	/**Returns the current state of {@link #tabIcon}.
-	 * <br/>
-	 * <br/>
+	 * <br>
+	 * <br>
 	 * Run whenever the tab is rendered
 	 * @throws NullPointerException
 	 * If Minecraft tries to render the tab but {@link tabIcon} is null or the item has not been textured*/
@@ -56,8 +57,8 @@ public class BaseCreativeTab extends CreativeTabs {
 	{	return tabIcon;}
 
 	/**Returns the current state of {@link #tabIconItemStack}.
-	 * <br/>
-	 * <br/>
+	 * <br>
+	 * <br>
 	 * Run whenever the tab is rendered
 	 * @throws NullPointerException
 	 * If Minecraft tries to render the tab but {@link tabIcon} or {@link tabIconItemStack} is null or the item has not been textured*/

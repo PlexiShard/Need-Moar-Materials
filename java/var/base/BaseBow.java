@@ -144,7 +144,7 @@ public class BaseBow extends BaseItem{
      *
      * @param itemStackIn The equipped {@link ItemStack}
      * @param worldIn The {@link World} the {@link ItemStack} exists in
-     * @param playerIn The {@link EntityPlayer) using the {@link Item}
+     * @param playerIn The {@link EntityPlayer} using the {@link Item}
      */
     public ItemStack onItemRightClick(ItemStack itemStackIn, World worldIn, EntityPlayer playerIn)
     {

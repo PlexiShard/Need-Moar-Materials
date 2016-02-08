@@ -24,9 +24,9 @@ public class BaseBlock extends Block{
 	public String texture;
 	/**Used to stored the {@link CreativeTabs} until it is registered*/
 	public static CreativeTabs tab;
-	/**Returns the texture*/
+	/**@return the texture*/
 	public String getTexture() {return texture();}
-	/**Returns the texture*/
+	/**@return the texture*/
 	public String texture() {return texture;}
 	
 	/**
@@ -34,7 +34,7 @@ public class BaseBlock extends Block{
 	 * Unlocalized Name to be returned in {@link Block}
 	 * 
 	 * @param newtab
-	 * {@link CreativeTab} to be returned in {@link Block}
+	 * {@link CreativeTabs Creative Tab} to be returned in {@link Block}
 	 * 
 	 * @param texture
 	 * String to be used for the texture .json
@@ -63,7 +63,7 @@ public class BaseBlock extends Block{
 	 * Unlocalized Name to be returned in {@link Block}
 	 * 
 	 * @param newtab
-	 * {@link CreativeTab} to be returned in {@link Block}
+	 * {@link CreativeTabs Creative Tab} to be returned in {@link Block}
 	 * 
 	 * @param texture
 	 * String to be used for the texture .json

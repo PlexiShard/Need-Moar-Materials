@@ -40,7 +40,7 @@ public class BaseHoe extends BaseItem{
     }
 
     /**
-     * Called when the BaseHoe is right-clicked on a {@link Block}.<br/><br/> 
+     * Called when the BaseHoe is right-clicked on a {@link Block}. <br><br>
      * Calls {@link #useHoe} if the {@link Block} is among a list of blocks (Currently consists only of farmland, dirt, and grass)
      * @param stack The {@link ItemStack} of BaseHoe
      * @param playerIn The {@link EntityPlayer} using stack
@@ -51,7 +51,7 @@ public class BaseHoe extends BaseItem{
      * @param hitY Unknown usage. Required for the function {@link Item#onItemUse} in {@link Item}
      * @param hitZ Unknown usage. Required for the function {@link Item#onItemUse} in {@link Item}
      * 
-     * @returns A boolean, true if it can be turned into farmland, false if it can't.
+     * @return A boolean, true if it can be turned into farmland, false if it can't.
      * */
     public boolean onItemUse(ItemStack stack, EntityPlayer playerIn, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ)
     {	if (!playerIn.canPlayerEdit(pos.offset(side), side, stack))
@@ -80,9 +80,9 @@ public class BaseHoe extends BaseItem{
             return false;
     }	}
     
-    /**Called from {@link #onItemUse} of {@link BaseHoe}. Does not run checks, it just sets a {@link BlockState} and {@link World#playSoundEffect plays a sound}.
-     * @param stack The {@link ItemStack} of the {@link ItemHoe Hoe}
-     * @param player The {@link EntityPlayer Player} using the {@link ItemHoe Hoe}
+    /**Called from {@link #onItemUse} of {@link BaseHoe}. Does not run checks, it just sets a {@link IBlockState Block State} and {@link World#playSoundEffect plays a sound}.
+     * @param stack The {@link ItemStack} of the {@link net.minecraft.item.ItemHoe Hoe}
+     * @param player The {@link EntityPlayer Player} using the {@link net.minecraft.item.ItemHoe Hoe}
      * @param worldIn The {@link World} being modified
      * @param target The {@link BlockPos Position} of the {@link Block} being targeted
      * @param newState The {@link IBlockState BlockState} that the target will be set to
@@ -102,7 +102,7 @@ public class BaseHoe extends BaseItem{
     public boolean isFull3D()
     {	return true;	}
 
-    /**@return The name of the {@link ToolMaterial Tool Material} which the {@link ItemHoe Hoe} uses*/
+    /**@return The name of the {@link ToolMaterial Tool Material} which the {@link net.minecraft.item.ItemHoe Hoe} uses*/
     public String getMaterialName()
     {	return this.theToolMaterial.toString();}
 
