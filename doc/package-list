@@ -1,0 +1,10 @@
+var.base
+var.block
+var.crafting
+var.creative
+var.dimension.sky
+var.item
+var.item.elemental
+var.main
+var.recipe
+var.world
