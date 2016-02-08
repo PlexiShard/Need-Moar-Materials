@@ -1,7 +1,0 @@
-{
-    "parent": "nmm:block/highFire_ne",
-    "textures": {
-        "particle": "nmm:blocks/highFire_layer_1",
-        "fire": "nmm:blocks/highFire_layer_1"
-    }
-}

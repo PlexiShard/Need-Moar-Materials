@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "axis=z": { "model": "nmm:skyPortal_ew" },
-        "axis=x": { "model": "nmm:skyPortal_ns" },
-        "normal": { "model": "nmm:skyPortal" },
-        "inventory": { "model": "nmm:skyPortal" }
-    }
-}

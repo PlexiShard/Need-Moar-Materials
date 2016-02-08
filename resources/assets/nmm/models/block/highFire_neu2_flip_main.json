@@ -1,7 +1,0 @@
-{
-    "parent": "nmm:block/highFire_neu2_flip",
-    "textures": {
-        "particle": "nmm:blocks/highFire_layer_0",
-        "fire": "nmm:blocks/highFire_layer_0"
-    }
-}
